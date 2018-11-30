@@ -1,0 +1,44 @@
+body {
+    main {
+        .whatsapp {
+            background-image: url('../../assets/images/fondo-whatsapp.jpg');
+            background-size: cover;
+            padding-top: 20%;
+            padding-bottom: 20%;
+            .contenedor {
+                text-align: center;
+                color: #545454;
+                p {
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 36px;
+                    font-style: italic;
+                    line-height: 1;
+                    i {
+                        color: #00C462;
+                        font-size: 50px;
+                    }
+                    strong {
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 900;
+                        font-size: 46px;
+                        margin-left: 2%;
+                        @include breakpoint(phone) {
+                            margin-left: 8%;
+                        }
+                    }
+                }
+                img {
+                    transition: 1s;
+                    cursor: pointer;
+                    @include breakpoint(phone) {
+                        width: 80%;
+                        margin-top: 20px;
+                    }
+                }
+                img:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}

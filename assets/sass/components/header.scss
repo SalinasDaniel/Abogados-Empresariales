@@ -1,0 +1,69 @@
+body {
+    header {
+        .head {
+            text-align: center;
+            @include breakpoint(desktop) {
+                text-align: left;
+                width: 85%;
+                margin-left: 7%;
+            }
+            @include breakpoint(tablet) {
+                text-align: left;
+                width: 85%;
+                margin-left: 7%;
+            }
+            .row {
+                margin-right: 0;
+                .col-sm-6 {
+                    .logo {
+                        margin-top: 20px;
+                        img {
+                            @include breakpoint(phone) {
+                                margin-left: 4%;
+                                width: 100%;
+                            }
+                            @include breakpoint(tablet) {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .contact {
+                        margin-top: 17px;
+                        @include breakpoint(phone) {
+                            margin-bottom: 15px;
+                        }
+                        @include breakpoint (desktop) {
+                            text-align: right;
+                        }
+                        @include breakpoint (tablet) {
+                            text-align: right;
+                        }
+                        i {
+                            float: left;
+                            font-size: 49px;
+                            margin-top: 24px;
+                            color: #046488;
+                            @include breakpoint(phone) {
+                                float: none;
+                                margin-left: 0;
+                                margin-bottom: 15px;
+                            }
+                            @include breakpoint(tablet) {
+                                margin-left: 13%;
+                            }
+                            @include breakpoint(desktop) {
+                                margin-left: 53%;
+                            }
+                        }
+                        p {
+                            font-size: 32px;
+                            font-weight: 900;
+                            margin: 0;
+                            font-family: 'Roboto', sans-serif;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

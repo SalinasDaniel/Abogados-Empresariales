@@ -1,0 +1,88 @@
+body {
+    main {
+        .block-equipo {
+            background: linear-gradient(to right, #046488 0%, #003140 100%);
+            color: #FFFFFF;
+            text-align: center;
+            padding-top: 10%;
+            padding-bottom: 10%;
+            padding-left: 10%;
+            padding-right: 10%;
+            @include breakpoint(phone) {
+                padding-top: 33%;
+                padding-bottom: 33%;
+            }
+            @include breakpoint(tablet) {
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+            .group-1 {
+                margin-bottom: 50px;
+            }
+            .group-1,
+            .group-2 {
+                margin-left: 0;
+                margin-right: 0;
+                ul {
+                    padding-left: 0;
+                    margin-top: 15px;
+                    @include breakpoint(phone) {
+                        margin-bottom: 100px;
+                    }
+                    li {
+                        font-size: 22px;
+                        list-style: none;
+                        strong {
+                            font-size: 27px;
+                        }
+                    }
+                    li:nth-child(2) {
+                        font-size: 17px;
+                    }
+                    li:nth-child(3) {
+                        font-size: 13px;
+                    }
+                }
+                img {
+                    background-color: white;
+                    border-radius: 120px;
+                }
+                .pluma {
+                    background-color: transparent;
+                    margin-top: 27px;
+                }
+            }
+            button {
+                color: #033949;
+                background-color: #EFC462;
+                font-size: 41px;
+                border-radius: 50px;
+                width: 34%;
+                border: solid 1px #EFC462;
+                cursor: pointer;
+                transition: 1s;
+                position: absolute;
+                right: 33%;
+                margin-top: 114px;
+                @include breakpoint(phone) {
+                    font-size: 33px;
+                    width: 77%;
+                    right: 10%;
+                    margin-top: 98px;
+                }
+                @include breakpoint(tablet) {
+                    right: 22%;
+                    margin-top: 40px;
+                    width: 53%;
+                }
+                @media screen and (min-width: 1900px) {
+                    margin-top: 156px;
+                }
+                strong {
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+body {
+    main {
+        .habilidades {
+            background: linear-gradient(to right, #FFFFFF 0%, #D8E0EB 100%);
+            padding-top: 10%;
+            padding-bottom: 10%;
+            @include breakpoint(phone) {
+                padding-top: 23%;
+                padding-bottom: 23%;
+            }
+            .row {
+                margin-left: 0;
+                margin-right: 0;
+                text-align: center;
+                .check {
+                    p {
+                        color: #6D6D6D;
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 27px;
+                        margin-top: 50px;
+                        @include breakpoint(phone) {
+                            font-size: 22px;
+                            margin-top: 16px;
+                        }
+                        strong {
+                            font-family: 'Open Sans', sans-serif;
+                            font-weight: 800;
+                            font-size: 36px;
+                            @include breakpoint(phone) {
+                                font-size: 31px;
+                            }
+                        }
+                    }
+                }
+                .check:nth-child(2) {
+                    @include breakpoint(phone) {
+                        margin-top: 75px;
+                    }
+                }
+            }
+        }
+    }
+}

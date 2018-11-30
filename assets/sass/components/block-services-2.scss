@@ -1,0 +1,118 @@
+body {
+    main {
+        .block-services-2 {
+            background: linear-gradient(to right, #FFFFFF 0%, #DFDFDF 100%);
+            .image-description {
+                margin-right: 0;
+                .image {
+                    padding-right: 0;
+                    img:nth-child(1) {
+                        position: absolute;
+                        @include breakpoint(phone) {
+                            left: 18%;
+                            top: -650px;
+                        }
+                        @include breakpoint(tablet) {
+                            left: 9%;
+                            top: 186px;
+                            width: 40%;
+                        }
+                        @include breakpoint(desktop) {
+                            top: 250px;
+                        }
+                        @media screen and (min-width: 1900px) {
+                            left: 7%;
+                            top: 416px;
+                        }
+                    }
+                    picture {
+                        img {
+                            width: 100%;
+                            @include breakpoint(phone) {
+                                margin-top: -1657px;
+                            }
+                        }
+                    }
+                }
+                .description {
+                    padding-left: 9%;
+                    @include breakpoint(phone) {
+                        margin-top: 629px;
+                        padding-left: 15%;
+                    }
+                    @include breakpoint(tablet) {
+                        margin-top: 60px;
+                    }
+                    @include breakpoint(desktop) {
+                        margin-top: 174px;
+                    }
+                    p {
+                        line-height: 1;
+                        margin-bottom: 45px;
+                        @include breakpoint(phone) {
+                            font-size: 35px;
+                        }
+                        @include breakpoint(tablet) {
+                            font-size: 34px;
+                            margin-left: 7%;
+                            margin-bottom: 28px;
+                        }
+                        @include breakpoint(desktop) {
+                            font-size: 44px;
+                        }
+                    }
+                    strong:nth-child(1) {
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 900;
+                    }
+                    ul {
+                        li {
+                            color: #ADADAD;
+                            span {
+                                color: #046488;
+                                font-family: 'Roboto', sans-serif;
+                                @include breakpoint(phone) {
+                                    font-size: 16px;
+                                }
+                                @include breakpoint(tablet) {
+                                    font-size: 19px;
+                                }
+                                @include breakpoint(desktop) {
+                                    font-size: 24px;
+                                }
+                            }
+                        }
+                    }
+                    button {
+                        color: #046488;
+                        font-size: 25px;
+                        background-color: #EFC462;
+                        height: 55px;
+                        border-radius: 39px;
+                        margin-top: 15px;
+                        border: solid 1px #EFC462;
+                        cursor: pointer;
+                        transition: 1s;
+                        @include breakpoint(phone) {
+                            font-size: 19px;
+                            width: 100%;
+                            margin-bottom: 43px;
+                        }
+                        @include breakpoint(tablet) {
+                            width: 115%;
+                            margin-bottom: 56px;
+                        }
+                        @include breakpoint(desktop) {
+                            width: 61%;
+                        }
+                    }
+                    button:hover {
+                        background-color: transparent;
+                        color: #EFC462;
+                        border: solid 1px #EFC462;
+                    }
+                }
+            }
+        }
+    }
+}

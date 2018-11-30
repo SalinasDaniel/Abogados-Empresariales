@@ -1,0 +1,87 @@
+body {
+    main {
+        .profesion {
+            background: linear-gradient(to right, #666666 0%, #DFDFDF 100%);
+            .image-description {
+                margin-left: 0;
+                margin-right: 0;
+                .image {
+                    text-align: right;
+                    margin-top: 47px;
+                    img {
+                        @include breakpoint(phone) {
+                            width: 100%;
+                        }
+                        @include breakpoint(tablet) {
+                            width: 100%;
+                        }
+                    }
+                }
+                .description {
+                    @include breakpoint(phone) {
+                        margin-top: 0;
+                    }
+                    @include breakpoint(tablet) {
+                        margin-top: 213px;
+                        margin-left: -4%;
+                    }
+                    @include breakpoint(desktop) {
+                        margin-top: 240px;
+                        margin-left: -1%;
+                    }
+                    h3 {
+                        background-color: #0478BC;
+                        color: #FFFFFF;
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 800;
+                        margin-left: -4%;
+                        border-radius: 0px 290px 290px 0px;
+                        height: 86px;
+                        padding-left: 4%;
+                        line-height: 1;
+                        @include breakpoint(phone) {
+                            margin-left: 0;
+                            border-radius: 290px;
+                            width: 100%;
+                            padding-left: 8%;
+                            height: 92px;
+                            padding-top: 5.2%;
+                        }
+                        @include breakpoint(tablet) {
+                            width: 80%;
+                            padding-top: 4.4%;
+                        }
+                        @include breakpoint(desktop) {
+                            width: 44%;
+                            padding-top: 2.2%;
+                        }
+                        strong {
+                            font-family: 'Raleway', sans-serif;
+                        }
+                    }
+                    img {
+                        float: right;
+                        margin-right: 42%;
+                        margin-top: -96px;
+                        @include breakpoint(phone) {
+                            display: none;
+                        }
+                        @include breakpoint(tablet) {
+                            margin-right: -9%;
+                        }
+                    }
+                    p {
+                        color: #FFFFFF;
+                        @include breakpoint(phone) {
+                            margin-left: 10%;
+                            margin-bottom: 46px;
+                        }
+                        strong {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
