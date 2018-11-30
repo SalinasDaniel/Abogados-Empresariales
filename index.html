@@ -92,7 +92,7 @@
                         <li><span> <strong> Evaluación y Mejora </strong> de procesos.</span></li>
                         <li><span>Acompañamiento <strong> Constante. </strong></span></li>
                     </ul>
-                    <button> <strong> ¡Necesito </strong> a éste Abogado!</button>
+                    <button data-toggle="modal" data-target="#myModal"> <strong> ¡Necesito </strong> a éste Abogado!</button>
                 </div>
             </div>
         </section>
@@ -108,7 +108,7 @@
                         <li><span> <strong> Protección </strong> de Marca. </span></li>
                         <li><span> Empresas <strong> Familiares. </strong> </span></li>
                     </ul>
-                    <button> <strong> ¡Necesito </strong> a éste Abogado!</button>
+                    <button data-toggle="modal" data-target="#myModal2"> <strong> ¡Necesito </strong> a éste Abogado!</button>
                 </div>
                 <div class="col-sm-6 image">
                     <img src="assets/images/Lineas-Servicio.png" alt="Empresas Familiares">
@@ -202,7 +202,7 @@
                     <img class="pluma" src="assets/images/pluma.png" alt="Abogados-Asesoria Experta">
                 </div>
             </div>
-            <button> <strong> Pide </strong> tu Asesoría</button>
+            <button data-toggle="modal" data-target="#myModal3"> <strong> Pide </strong> tu Asesoría</button>
         </section>
 
         <section class="formulario-2">
@@ -245,6 +245,69 @@
                     </form>
                 </div>
             </div>
+        </section>
+
+        <section class="popups">
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="contenedor">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <div class="modal-body">
+                                <p>Tu Abogado </p>
+                                <form action="/action_page.php">
+                                    <input type="text" class="" placeholder="Nombre">
+                                    <input type="number" class="" placeholder="Celular">
+                                    <input type="email" class="" placeholder="Email">
+                                    <button type="submit" class="btn btn-default bton">De <strong> INMEDIATO </strong> </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Modal -->
+            <!-- Modal-2 -->
+            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="contenedor">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <div class="modal-body">
+                                <p>Tu Abogado </p>
+                                <form action="/action_page.php">
+                                    <input type="text" class="" placeholder="Nombre">
+                                    <input type="number" class="" placeholder="Celular">
+                                    <input type="email" class="" placeholder="Email">
+                                    <button type="submit" class="btn btn-default bton">De <strong> INMEDIATO </strong> </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Modal-2 -->
+            <!-- Modal-3 -->
+            <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content content-2">
+                        <div class="contenedor contener-2">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <div class="modal-body">
+                                <p>Te <strong> Asesoramos </strong> </p>
+                                <form action="/action_page.php">
+                                    <input type="text" class="" placeholder="Nombre">
+                                    <input type="number" class="" placeholder="Celular">
+                                    <input type="email" class="" placeholder="Email">
+                                    <button type="submit" class="btn btn-default bton"><strong> ¡YA! </strong> </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Modal-3 -->
         </section>
 
     </main>

@@ -1,0 +1,118 @@
+body {
+    main {
+        .popups {
+            .modal-dialog {
+                padding-left: 5%;
+                padding-right: 5%;
+                padding-top: 5%;
+                @include breakpoint(phone) {
+                    padding-top: 22%;
+                }
+                .modal-content {
+                    background-color: #FFFFFF;
+                    border-radius: 30px 66px 30px 30px;
+                    .contenedor {
+                        background-color: #046488;
+                        border-radius: 30px 160px 30px 30px;
+                        padding-top: 25%;
+                        padding-bottom: 14%;
+                        .close {
+                            position: absolute;
+                            left: 50%;
+                            top: 10%;
+                        }
+                        p {
+                            color: #FFFFFF;
+                            font-family: 'Montserrat', sans-serif;
+                            font-weight: 800;
+                            text-align: center;
+                            font-size: 40px;
+                        }
+                        form {
+                            padding-left: 9%;
+                            padding-right: 9%;
+                            input {
+                                display: block;
+                                width: 100%;
+                                height: 50px;
+                                margin-bottom: 24px;
+                                border-radius: 50px;
+                                padding-left: 4%;
+                                background-color: transparent;
+                                border: solid 2px #FFFFFF;
+                            }
+                             ::placeholder {
+                                color: #FFFFFF;
+                            }
+                            .btn {
+                                width: 100%;
+                                background-color: #EFC462;
+                                color: #046488;
+                                font-size: 25px;
+                                border-radius: 50px;
+                                transition: 1s;
+                                @include breakpoint(phone) {
+                                    font-size: 20px;
+                                }
+                                strong {
+                                    font-family: 'Montserrat', sans-serif;
+                                    font-weight: 800;
+                                }
+                            }
+                            .btn:hover {
+                                background-color: transparent;
+                                color: #FFFFFF;
+                                border-color: #EFC462;
+                            }
+                        }
+                    }
+                }
+                .content-2 {
+                    background-color: #000000;
+                    border-radius: 30px 30px 30px 66px;
+                    .contener-2 {
+                        background-color: #EFC462;
+                        border-radius: 30px 30px 30px 160px;
+                        p {
+                            font-size: 32px;
+                            font-family: 'Raleway', sans-serif;
+                            font-weight: normal;
+                            strong {
+                                font-family: 'Montserrat', sans-serif;
+                                font-weight: 800;
+                            }
+                        }
+                        form {
+                            input {
+                                border: solid 2px #000000;
+                            }
+                             ::placeholder {
+                                color: #000000;
+                            }
+                            .btn {
+                                width: 100%;
+                                background-color: #000000;
+                                color: #FFFFFF;
+                                font-size: 25px;
+                                border-radius: 50px;
+                                transition: 1s;
+                                @include breakpoint(phone) {
+                                    font-size: 20px;
+                                }
+                                strong {
+                                    font-family: 'Montserrat', sans-serif;
+                                    font-weight: 800;
+                                }
+                            }
+                            .btn:hover {
+                                background-color: transparent;
+                                color: #000000;
+                                border-color: #000000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

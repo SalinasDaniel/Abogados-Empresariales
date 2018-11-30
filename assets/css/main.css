@@ -812,3 +812,94 @@ body main .formulario-3 {
         background-color: transparent;
         color: #FFFFFF;
         border-color: #046488; }
+
+body main .popups .modal-dialog {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%; }
+  @media (max-width: 667px) {
+    body main .popups .modal-dialog {
+      padding-top: 22%; } }
+  body main .popups .modal-dialog .modal-content {
+    background-color: #FFFFFF;
+    border-radius: 30px 66px 30px 30px; }
+    body main .popups .modal-dialog .modal-content .contenedor {
+      background-color: #046488;
+      border-radius: 30px 160px 30px 30px;
+      padding-top: 25%;
+      padding-bottom: 14%; }
+      body main .popups .modal-dialog .modal-content .contenedor .close {
+        position: absolute;
+        left: 50%;
+        top: 10%; }
+      body main .popups .modal-dialog .modal-content .contenedor p {
+        color: #FFFFFF;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        text-align: center;
+        font-size: 40px; }
+      body main .popups .modal-dialog .modal-content .contenedor form {
+        padding-left: 9%;
+        padding-right: 9%; }
+        body main .popups .modal-dialog .modal-content .contenedor form input {
+          display: block;
+          width: 100%;
+          height: 50px;
+          margin-bottom: 24px;
+          border-radius: 50px;
+          padding-left: 4%;
+          background-color: transparent;
+          border: solid 2px #FFFFFF; }
+        body main .popups .modal-dialog .modal-content .contenedor form ::placeholder {
+          color: #FFFFFF; }
+        body main .popups .modal-dialog .modal-content .contenedor form .btn {
+          width: 100%;
+          background-color: #EFC462;
+          color: #046488;
+          font-size: 25px;
+          border-radius: 50px;
+          transition: 1s; }
+          @media (max-width: 667px) {
+            body main .popups .modal-dialog .modal-content .contenedor form .btn {
+              font-size: 20px; } }
+          body main .popups .modal-dialog .modal-content .contenedor form .btn strong {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800; }
+        body main .popups .modal-dialog .modal-content .contenedor form .btn:hover {
+          background-color: transparent;
+          color: #FFFFFF;
+          border-color: #EFC462; }
+  body main .popups .modal-dialog .content-2 {
+    background-color: #000000;
+    border-radius: 30px 30px 30px 66px; }
+    body main .popups .modal-dialog .content-2 .contener-2 {
+      background-color: #EFC462;
+      border-radius: 30px 30px 30px 160px; }
+      body main .popups .modal-dialog .content-2 .contener-2 p {
+        font-size: 32px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: normal; }
+        body main .popups .modal-dialog .content-2 .contener-2 p strong {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 800; }
+      body main .popups .modal-dialog .content-2 .contener-2 form input {
+        border: solid 2px #000000; }
+      body main .popups .modal-dialog .content-2 .contener-2 form ::placeholder {
+        color: #000000; }
+      body main .popups .modal-dialog .content-2 .contener-2 form .btn {
+        width: 100%;
+        background-color: #000000;
+        color: #FFFFFF;
+        font-size: 25px;
+        border-radius: 50px;
+        transition: 1s; }
+        @media (max-width: 667px) {
+          body main .popups .modal-dialog .content-2 .contener-2 form .btn {
+            font-size: 20px; } }
+        body main .popups .modal-dialog .content-2 .contener-2 form .btn strong {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 800; }
+      body main .popups .modal-dialog .content-2 .contener-2 form .btn:hover {
+        background-color: transparent;
+        color: #000000;
+        border-color: #000000; }
