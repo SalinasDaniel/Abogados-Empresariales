@@ -1,118 +1,151 @@
 body {
-    header {
+    main {
         .headboard {
-            background-image: url('../../assets/images/Fondo-Cabezera.png');
+            background-image: url('../../assets/images/Portada.jpg');
             background-size: cover;
+            height: 730px;
+            @include breakpoint(phone) {
+                height: auto;
+            }
+            @include breakpoint(tablet) {
+                height: auto;
+            }
             .team {
                 @include breakpoint(phone) {
                     margin-top: 34px;
                     width: 100%;
                 }
                 @include breakpoint(tablet) {
-                    width: 100%;
-                    margin-top: 0;
+                    width: 50%;
+                    margin-top: -166px;
                 }
                 @include breakpoint(desktop) {
-                    margin-top: -126px;
+                    margin-top: -269px;
+                    margin-left: 5%;
+                    width: 38%;
                 }
             }
             .form-description {
                 margin-left: 0;
                 margin-right: 0;
+                padding-top: 16%;
+                @include breakpoint(phone) {
+                    padding-top: 100%;
+                }
+                @include breakpoint(tablet) {
+                    padding-top: 25%;
+                }
                 .description {
                     color: #FFFFFF;
-                    margin-top: 152px;
                     @include breakpoint(phone) {
                         text-align: center;
                         margin-top: 60px;
                     }
                     @include breakpoint(tablet) {
-                        margin-top: 259px;
                         padding-left: 5%;
                     }
                     @include breakpoint(desktop) {
-                        padding-left: 13%;
-                    }
-                    h1 {
-                        @include breakpoint(tablet) {
-                            font-size: 26px;
-                        }
-                    }
-                    img {
-                        float: left;
-                        margin-top: 17px;
-                        @include breakpoint(phone) {
-                            float: none;
-                        }
-                        @include breakpoint(tablet) {
-                            margin-top: 9px;
-                        }
+                        padding-left: 7%;
                     }
                     p {
-                        margin-bottom: 0;
-                        font-size: 31px;
-                    }
-                }
-            }
-            .form {
-                margin-top: 104px;
-                @include breakpoint(phone) {
-                    margin-top: 20px;
-                    padding-right: 13%;
-                    padding-left: 13%;
-                }
-                @include breakpoint(tablet) {
-                    padding-right: 7%;
-                }
-                @include breakpoint(desktop) {
-                    padding-right: 18%;
-                }
-                form {
-                    input {
-                        display: block;
-                        width: 100%;
-                        height: 50px;
-                        margin-bottom: 20px;
-                        border-radius: 36px;
-                        padding-left: 3%;
-                        background-color: transparent;
-                        border: solid 2px #FFFFFF;
-                    }
-                     ::placeholder {
-                        color: #FFFFFF;
-                    }
-                    .btn {
-                        width: 100%;
-                        background-color: #EFC462;
-                        height: 50px;
-                        border-radius: 33px;
-                        border: solid 1px #EFC462;
-                        color: #000000;
-                        font-size: 27px;
-                        font-weight: bold;
-                        transition: 1s;
-                    }
-                    .btn:hover {
-                        border: solid 2px #EFC462;
-                        background-color: transparent;
-                        color: #EFC462;
+                        line-height: 1;
+                        font-size: 26px;
+                        @include breakpoint(phone) {
+                            font-size: 24px;
+                        }
+                        strong {
+                            font-size: 65px;
+                            @include breakpoint(phone) {
+                                font-size: 36px;
+                            }
+                        }
                     }
                 }
                 img {
                     float: left;
-                    margin-top: 14px;
-                }
-                p {
-                    color: #FFFFFF;
+                    margin-top: 17px;
                     @include breakpoint(phone) {
-                        font-size: 23px;
-                        margin-top: 8px;
+                        float: none;
                     }
                     @include breakpoint(tablet) {
-                        font-size: 25px;
+                        margin-top: 9px;
                     }
-                    @include breakpoint(desktop) {
-                        font-size: 33px;
+                }
+            }
+            .form {
+                .item {
+                    background-color: #FFFFFF;
+                    text-align: center;
+                    width: 62%;
+                    padding-right: 7%;
+                    padding-left: 7%;
+                    padding-top: 5%;
+                    padding-bottom: 8%;
+                    border-radius: 30px;
+                    @include breakpoint(phone) {
+                        width: 100%;
+                        padding-top: 10%;
+                        padding-bottom: 15%;
+                    }
+                    @include breakpoint(tablet) {
+                        width: 90%;
+                    }
+                    form {
+                        input {
+                            display: block;
+                            width: 100%;
+                            height: 50px;
+                            margin-bottom: 20px;
+                            border-radius: 6px;
+                            border: solid 1px #D6D6D6;
+                            padding-left: 3%;
+                            -webkit-box-shadow: 0px 6px 26px -7px rgba(0, 0, 0, 0.75);
+                            -moz-box-shadow: 0px 6px 26px -7px rgba(0, 0, 0, 0.75);
+                            box-shadow: 0px 6px 26px -7px rgba(0, 0, 0, 0.75);
+                        }
+                         ::placeholder {
+                            color: #03132E;
+                            font-weight: bold;
+                        }
+                        .btn {
+                            width: 100%;
+                            background-color: #F2B200;
+                            height: 50px;
+                            border-radius: 6px;
+                            border: solid 1px #F2B200;
+                            color: #FFFFFF;
+                            font-size: 23px;
+                            font-weight: 500;
+                            transition: 1s;
+                            -webkit-box-shadow: 0px 6px 26px -7px rgba(0, 0, 0, 0.75);
+                            -moz-box-shadow: 0px 6px 26px -7px rgba(0, 0, 0, 0.75);
+                            box-shadow: 0px 6px 26px -7px rgba(0, 0, 0, 0.75);
+                            @include breakpoint(phone) {
+                                font-size: 20px;
+                            }
+                        }
+                        .btn:hover {
+                            border: solid 1px #F2B200;
+                            background-color: transparent;
+                            color: #F2B200;
+                        }
+                    }
+                    img {
+                        float: left;
+                        margin-top: 14px;
+                    }
+                    p {
+                        color: #03132E;
+                        @include breakpoint(phone) {
+                            font-size: 23px;
+                            margin-top: 8px;
+                        }
+                        @include breakpoint(tablet) {
+                            font-size: 25px;
+                        }
+                        @include breakpoint(desktop) {
+                            font-size: 33px;
+                        }
                     }
                 }
             }

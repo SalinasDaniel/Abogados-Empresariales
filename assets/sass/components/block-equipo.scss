@@ -1,7 +1,7 @@
 body {
     main {
         .block-equipo {
-            background: linear-gradient(to right, #046488 0%, #003140 100%);
+            background-color: #03132E;
             color: #FFFFFF;
             text-align: center;
             padding-top: 10%;
@@ -16,8 +16,13 @@ body {
                 padding-left: 5%;
                 padding-right: 5%;
             }
+            h2 {
+                text-align: center;
+                color: #FFFFFF;
+            }
             .group-1 {
                 margin-bottom: 50px;
+                margin-top: 90px;
             }
             .group-1,
             .group-2 {
@@ -44,8 +49,10 @@ body {
                     }
                 }
                 img {
-                    background-color: white;
-                    border-radius: 120px;
+                    width: 50%;
+                    @include breakpoint(phone) {
+                        width: 80%;
+                    }
                 }
                 .pluma {
                     background-color: transparent;
@@ -54,16 +61,17 @@ body {
             }
             button {
                 color: #033949;
-                background-color: #EFC462;
+                background-color: #F2B200;
                 font-size: 41px;
-                border-radius: 50px;
+                border-radius: 6px;
                 width: 34%;
-                border: solid 1px #EFC462;
+                border: solid 1px #F2B200;
                 cursor: pointer;
                 transition: 1s;
                 position: absolute;
                 right: 33%;
-                margin-top: 114px;
+                margin-top: 100px;
+                font-weight: bold;
                 @include breakpoint(phone) {
                     font-size: 33px;
                     width: 77%;
@@ -82,6 +90,11 @@ body {
                     font-family: 'Montserrat', sans-serif;
                     font-weight: 800;
                 }
+            }
+            button:hover {
+                color: #F2B200;
+                background-color: #033949;
+                border: solid 1px #033949;
             }
         }
     }

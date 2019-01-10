@@ -13,29 +13,32 @@ body {
                     font-size: 36px;
                     font-style: italic;
                     line-height: 1;
-                    i {
-                        color: #00C462;
-                        font-size: 50px;
-                    }
                     strong {
-                        font-family: 'Montserrat', sans-serif;
+                        font-family: 'Roboto', sans-serif;
+                        font-style: italic;
                         font-weight: 900;
                         font-size: 46px;
-                        margin-left: 2%;
+                        margin-right: 9%;
                         @include breakpoint(phone) {
                             margin-left: 8%;
                         }
                     }
                 }
-                img {
+                .check {
+                    position: absolute;
+                    margin-top: -11px;
+                    margin-left: 5px;
+                }
+                img.whats {
                     transition: 1s;
                     cursor: pointer;
+                    margin-top: -50px;
                     @include breakpoint(phone) {
                         width: 80%;
                         margin-top: 20px;
                     }
                 }
-                img:hover {
+                img.whats:hover {
                     transform: scale(1.2);
                 }
             }

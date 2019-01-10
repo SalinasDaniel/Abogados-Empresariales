@@ -1,0 +1,91 @@
+body {
+    main {
+        .testimonial-slider {
+            background-color: #03132E;
+            color: #FFFFFF;
+            text-align: center;
+            padding-top: 10%;
+            padding-bottom: 10%;
+            @include breakpoint(phone) {
+                padding-top: 30%;
+                padding-bottom: 30%;
+            }
+            h2.title {
+                margin-bottom: 100px;
+            }
+            .carousel-item {
+                padding-left: 19%;
+                padding-right: 13%;
+                @include breakpoint(phone) {
+                    padding-left: 10%;
+                    padding-right: 10%;
+                }
+                @include breakpoint(tablet) {
+                    padding-left: 10%;
+                    padding-right: 5%;
+                }
+                .group-1,
+                .group-2 {
+                    .item {
+                        border: solid 1px #FFFFFF;
+                        padding-top: 7%;
+                        padding-bottom: 5%;
+                        border-radius: 7px;
+                        width: 80%;
+                        @include breakpoint(phone) {
+                            width: auto;
+                            margin-bottom: 20px;
+                        }
+                        @include breakpoint(tablet) {
+                            width: 90%;
+                        }
+                        img {
+                            position: absolute;
+                            left: -25px;
+                        }
+                        img:nth-child(2) {
+                            left: 69%;
+                            top: -2px;
+                            @include breakpoint(phone) {
+                                left: 81%;
+                            }
+                            @include breakpoint(tablet) {
+                                left: 74%;
+                            }
+                        }
+                        article {
+                            h2 {
+                                font-size: 20px;
+                            }
+                            p {
+                                font-size: 12px;
+                                text-align: left;
+                                padding-left: 30%;
+                                padding-right: 20%;
+                            }
+                        }
+                    }
+                }
+                .group-1 {
+                    margin-bottom: 26px;
+                    @include breakpoint(phone) {
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+            .carousel-indicators {
+                bottom: -55px;
+                li {
+                    background-color: #FFFFFF;
+                    width: 7px;
+                    height: 7px;
+                    border-radius: 15px;
+                    margin-right: 2%;
+                }
+                li.active {
+                    background-color: #F2B200;
+                }
+            }
+        }
+    }
+}

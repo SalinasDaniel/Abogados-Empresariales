@@ -1,9 +1,9 @@
 body {
     footer {
         background-color: #FFFFFF;
-        .row {
+        .items {
             margin-right: 0;
-            .col-sm-8 {
+            .item2 {
                 ul {
                     margin-top: 37px;
                     @include breakpoint(desktop) {
@@ -14,20 +14,29 @@ body {
                         list-style: none;
                         font-size: 13px;
                         margin-top: 5px;
-                        font-family: 'Open Sans', sans-serif;
+                        font-family: 'Roboto', sans-serif;
                         font-weight: bold;
-                        font-style: italic;
-                        color: #000000;
+                        color: #03132E;
+                        margin-bottom: 9px;
                         @include breakpoint(desktop) {
                             font-size: 22px;
                             margin-top: 0;
                         }
                         i {
                             width: 8%;
-                            color: #000000;
+                            color: #F2B200;
                             @include breakpoint(desktop) {
                                 width: 5%;
                                 letter-spacing: 16px;
+                            }
+                        }
+                        span {
+                            margin-left: 5%;
+                            @include breakpoint(phone) {
+                                margin-left: 8%;
+                            }
+                            @include breakpoint(tablet) {
+                                margin-left: 8%;
                             }
                         }
                     }
@@ -48,7 +57,7 @@ body {
                     }
                 }
                 @include breakpoint(desktop) {
-                    margin-top: 40px;
+                    margin-top: 70px;
                     margin-bottom: 40px;
                 }
             }

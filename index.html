@@ -16,10 +16,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
 </head>
@@ -44,138 +47,148 @@
                 </div>
             </div>
         </section>
-
-        <section class="headboard">
-            <div class="row form-description">
-                <div class="col-sm-7 description">
-                    <img src="assets/images/Asesores-Expertos.png" alt="Asesores Expertos">
-                    <p>Contamos con</p>
-                    <h1>ASESORES EXPERTOS</h1>
+        <section class="menu">
+            <hr>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto" id="nav-menu">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Preguntas Frecuentes</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-sm-5 form">
-                    <img src="assets/images/Hoja.png" alt="Hoja">
-                    <p>Asesoría <strong> al Instante </strong></p>
-                    <form action="/action_page.php">
-                        <input type="text" placeholder="Nombre">
-                        <input type="number" placeholder="Celular">
-                        <input type="email" placeholder="Email">
-                        <button type="submit" class="btn btn-default bton">¡YA!</button>
-                    </form>
-                </div>
-            </div>
-            <img class="team" src="assets/images/Equipo-Abogados-Empresariales.png" alt="Equipo Abogados Estrategia Empresariales">
+            </nav>
         </section>
-
     </header>
 
     <main>
-
-        <section class="titulo">
-            <h2>NUESTROS <strong> SERVICIOS: </strong></h2>
+        <section class="headboard">
+            <div class="row form-description">
+                <div class="col-sm-6 description">
+                    <p>Llevaremos tu Empresa al <br> <strong>Siguiente Nivel</strong></p>
+                </div>
+                <div class="col-sm-6 form">
+                    <div class="item">
+                        <p>Consulta <br> <strong> 100% GRATIS </strong></p>
+                        <form action="/action_page.php">
+                            <input type="text" placeholder="Nombre">
+                            <input type="number" placeholder="Celular">
+                            <input type="email" placeholder="Email">
+                            <button type="submit" class="btn btn-default bton">OBTENER CONSULTA</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <img class="team" src="assets/images/Abogados.png" alt="Equipo Abogados Estrategia Empresariales">
         </section>
 
-        <section class="block-services">
-            <div class="row image-description">
-                <div class="col-sm-6 image">
-                    <img src="assets/images/Constitucion.png" alt="Acompañamiento Constante">
-                    <picture>
-                        <source media="(max-width: 667px)" srcset="assets/images/Abogado-mobile.png">
-                        <img src="assets/images/Abogado.png" alt="Abogado-Asesoria Permanente">
-                    </picture>
+        <section class="column">
+            <div class="row items">
+                <div class="col-sm-5 item1">
+                    <img src="assets/images/Asesores.png" alt="Asesoria">
                 </div>
-                <div class="col-sm-6 description">
-                    <p> <strong> Constitución, </strong> <br> <strong> acompañamiento </strong> <br> y seguimiento.</p>
-                    <ul>
-                        <li><span>  Asesoría <strong> Permanente. </strong></span></li>
-                        <li><span> <strong> Conocimiento </strong> del Ideal Comercial.</span></li>
-                        <li><span> <strong> Sugerencia </strong> de rutas integrales.</span></li>
-                        <li><span> <strong> Evaluación y Mejora </strong> de procesos.</span></li>
-                        <li><span>Acompañamiento <strong> Constante. </strong></span></li>
-                    </ul>
-                    <button data-toggle="modal" data-target="#myModal"> <strong> ¡Necesito </strong> a éste Abogado!</button>
+                <div class="col-sm-7 item2">
+                    <article>
+                        <p>Contamos con un Excelente <br> <strong> Grupo de Asesores </strong><br> en Diferentes Campos.</p>
+                    </article>
                 </div>
             </div>
         </section>
 
         <section class="block-services-2">
             <div class="row image-description">
-                <div class="col-sm-6 description">
-                    <p> <strong> Líneas </strong> <br> de Servicio.</p>
+                <div class="col-sm-5 description">
+                    <p><strong> Constitución, </strong> <br> acompañamiento <br> y seguimiento.</p>
                     <ul>
-                        <li><span> Para <strong> Empresas. </strong> </span></li>
-                        <li><span> Procesos <strong> Especiales. </strong> </span></li>
-                        <li><span> <strong> Consultoría </strong> en Insolvencias, <br> Quiebra o Bancarrota. </span></li>
-                        <li><span> <strong> Protección </strong> de Marca. </span></li>
-                        <li><span> Empresas <strong> Familiares. </strong> </span></li>
+                        <li><span> Asesoría <strong> Permanente. </strong> </span></li>
+                        <li><span> <strong> Conocimiento </strong> del Ideal Comercial. </span></li>
+                        <li><span> <strong> Sugerencia  </strong> de rutas integrales. </span></li>
+                        <li><span> <strong> Evaluación y Mejora </strong> de procesos. </span></li>
+                        <li><span> Acompañamiento  <strong> Constante. </strong> </span></li>
                     </ul>
                     <button data-toggle="modal" data-target="#myModal2"> <strong> ¡Necesito </strong> a éste Abogado!</button>
                 </div>
-                <div class="col-sm-6 image">
-                    <img src="assets/images/Lineas-Servicio.png" alt="Empresas Familiares">
-                    <picture>
-                        <source media="(max-width: 667px)" srcset="assets/images/Abogado-mobile.png">
-                        <img src="assets/images/Servicio.png" alt="Abogado-Asesoria Permanente">
-                    </picture>
+                <div class="col-sm-7 image">
                 </div>
             </div>
         </section>
 
-        <section class="titulo">
-            <h2>¡CONTAMOS CON <strong> PSICÓLOGO! </strong></h2>
-        </section>
-
-        <section class="profesion">
-            <div class="row image-description">
-                <div class="col-sm-6 image">
-                    <img src="assets/images/Psicologo.png" alt="Carlos Guillermo">
+        <section class="column-2">
+            <div class="row items">
+                <div class="col-sm-5 item1">
+                    <img src="assets/images/Abogados-Expertos.png" alt="Asesoria Experta">
                 </div>
-                <div class="col-sm-6 description">
-                    <h3> Carlos Guillermo <br> <strong> Martínez Chaves </strong> </h3>
-                    <img src="assets/images/Check-Psicologo.png" alt="Psicologo Abogados Empresariales">
-                    <p> <strong> Psicólogo </strong> <br> Egresado de la <br> UniversidadJaveriana </p>
+                <div class="col-sm-7 item2">
+                    <p> Contamos con un Excelente <br> <strong> Grupo de Asesores </strong><br> en Diferentes Campos. </p>
                 </div>
             </div>
         </section>
 
         <section class="habilidades">
+            <h2>Lo que nos <br> <strong> Hace Diferentes. </strong></h2>
             <div class="row">
                 <div class="col-sm-6 check">
-                    <img src="assets/images/Check-1.png">
-                    <p> <strong> Alta experiencia </strong> <br> con el empresariado nacional</p>
+                    <img src="assets/images/Asesoria.png" alt="Asesoría Integral">
+                    <p> <strong> Asesoría Integral, </strong> <br> jurídica, financiera, tributaria, <br> psicológica y contable.</p>
                 </div>
                 <div class="col-sm-6 check">
-                    <img src="assets/images/Check-2.png">
-                    <p> <strong> Asesoría Integral, </strong> <br> jurídica, financiera, tributaria, <br> psicológica y contable.</p>
+                    <img src="assets/images/Experiencia.png" alt="Alta experiencia">
+                    <p> <strong> Alta experiencia </strong> <br> con el empresariado nacional</p>
                 </div>
             </div>
         </section>
 
-        <section class="titulo">
-            <h2>¡CONTAMOS CON <strong> PSICÓLOGO! </strong></h2>
+        <section class="column">
+            <div class="row items">
+                <div class="col-sm-5 item1">
+                    <img src="assets/images/Asesoria-Especializada.png" alt="Asesoria Especializada">
+                </div>
+                <div class="col-sm-7 item2">
+                    <article>
+                        <p><strong> Asesoría especializada </strong><br> a precios justos.</p>
+                    </article>
+                </div>
+            </div>
         </section>
 
         <section class="block-equipo">
+            <h2>Conoce a <br> <strong> Tus Abogados</strong></h2>
             <div class="row group-1">
                 <div class="col-sm-4">
-                    <img src="assets/images/Abogado-1.png" alt="Albino Luciany">
+                    <img src="assets/images/Albino-Peña.png" alt="Albino Peña">
                     <ul>
-                        <li> <strong> Albino Luciany </strong> <br> Peña Arias </li>
+                        <li> <strong> Albino Peña </strong></li>
                         <li>Contador Público</li>
                         <li>en Derecho Tributario.</li>
                     </ul>
                 </div>
                 <div class="col-sm-4">
-                    <img src="assets/images/Abogado-1.png" alt="Viviana Constanza">
+                    <img src="assets/images/Viviana-Gutierrez.png" alt="Viviana Gutierrez">
                     <ul>
-                        <li> <strong> Viviana Constanza </strong> <br> Gutierrez Perdomo </li>
-                        <li>Abogada</li>
-                        <li>en Derecho de los Negocios.</li>
+                        <li> <strong> Viviana Gutierrez </strong></li>
+                        <li>Abogada en Derecho</li>
+                        <li>de los Negocios.</li>
                     </ul>
                 </div>
                 <div class="col-sm-4">
-                    <img src="assets/images/Abogado-1.png" alt="Carlos Alberto">
+                    <img src="assets/images/Carlos-Sanchez.png" alt="Carlos Sanchez">
                     <ul>
-                        <li> <strong> Carlos Alberto </strong> <br> Sánchez Rincón </li>
+                        <li> <strong> Carlos Sánchez </strong></li>
                         <li>Administrador de Empresas</li>
                         <li>en Alta Gerencia.</li>
                     </ul>
@@ -183,17 +196,17 @@
             </div>
             <div class="row group-2">
                 <div class="col-sm-4">
-                    <img src="assets/images/Abogado-1.png" alt="Cristian Enrique">
+                    <img src="assets/images/Cristian-Canencio.png" alt="Cristian Canencio">
                     <ul>
-                        <li> <strong> Cristian Enrique </strong> <br> Canencio Motta </li>
-                        <li>Abogado</li>
-                        <li>en Derecho Laboral.</li>
+                        <li> <strong> Cristian Canencio </strong></li>
+                        <li>Abogado en Derecho</li>
+                        <li>Laboral.</li>
                     </ul>
                 </div>
                 <div class="col-sm-4">
-                    <img src="assets/images/Abogado-1.png" alt="Oscar Luis">
+                    <img src="assets/images/Oscar-Pedroza.png" alt="Oscar Pedroza">
                     <ul>
-                        <li> <strong> Oscar Luis </strong> <br> Pedroza Jimenez </li>
+                        <li> <strong> Oscar Pedroza </strong> <br></li>
                         <li>Financiero</li>
                         <li>en Administración.</li>
                     </ul>
@@ -202,26 +215,254 @@
                     <img class="pluma" src="assets/images/pluma.png" alt="Abogados-Asesoria Experta">
                 </div>
             </div>
-            <button data-toggle="modal" data-target="#myModal3"> <strong> Pide </strong> tu Asesoría</button>
+            <button data-toggle="modal" data-target="#myModal3"> Pide tu Asesoría</button>
+        </section>
+
+        <section class="preparations">
+            <div class="row items">
+                <div class="col-sm-4 item1">
+                    <img src="assets/images/Manos.png" alt="Preparados para ayudar">
+                </div>
+                <div class="col-sm-8 item2">
+                    <p>Estamos preparados para guiarte <br> y <strong> Tomar Cartas en el Asunto. </strong></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="column">
+            <div class="row items">
+                <div class="col-sm-5 item1">
+                    <img src="assets/images/Experiencia-Casos.png" alt="Experiencias en Casos">
+                </div>
+                <div class="col-sm-7 item2">
+                    <article>
+                        <p>Tenemos Experiencia <br> en casos como el <strong> Tuyo. </strong> </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial-slider">
+            <h2 class="title">Ellos <strong> Respaldan </strong><br> la calidad de nuestro servicio.</h2>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row group-1">
+                            <div class="col-sm-6">
+                                <div class="item">
+                                    <img src="assets/images/Perfil.png" alt="Tatiana Mayorca">
+                                    <img src="assets/images/Comillas-Testimonios.png" alt="Testimonios">
+                                    <article>
+                                        <h2><strong> Tatiana </strong> Mayorca</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore </p>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="item">
+                                    <img src="assets/images/Perfil.png" alt="Tatiana Mayorca">
+                                    <img src="assets/images/Comillas-Testimonios.png" alt="Testimonios">
+                                    <article>
+                                        <h2><strong> Tatiana </strong> Mayorca</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore </p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row group-2">
+                            <div class="col-sm-6">
+                                <div class="item">
+                                    <img src="assets/images/Perfil.png" alt="Lucila Ramillete">
+                                    <img src="assets/images/Comillas-Testimonios.png" alt="Testimonios">
+                                    <article>
+                                        <h2><strong> Lucila </strong> Ramillete</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore </p>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="item">
+                                    <img src="assets/images/Perfil.png" alt="Lucila Ramillete">
+                                    <img src="assets/images/Comillas-Testimonios.png" alt="Testimonios">
+                                    <article>
+                                        <h2><strong> Lucila </strong> Ramillete</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore </p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row group-1">
+                            <div class="col-sm-6">
+                                <div class="item">
+                                    <img src="assets/images/Perfil.png" alt="Tatiana Mayorca">
+                                    <img src="assets/images/Comillas-Testimonios.png" alt="Testimonios">
+                                    <article>
+                                        <h2><strong> Tatiana </strong> Mayorca</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore </p>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="item">
+                                    <img src="assets/images/Perfil.png" alt="Tatiana Mayorca">
+                                    <img src="assets/images/Comillas-Testimonios.png" alt="Testimonios">
+                                    <article>
+                                        <h2><strong> Tatiana </strong> Mayorca</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore </p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row group-2">
+                            <div class="col-sm-6">
+                                <div class="item">
+                                    <img src="assets/images/Perfil.png" alt="Lucila Ramillete">
+                                    <img src="assets/images/Comillas-Testimonios.png" alt="Testimonios">
+                                    <article>
+                                        <h2><strong> Lucila </strong> Ramillete</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore </p>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="item">
+                                    <img src="assets/images/Perfil.png" alt="Lucila Ramillete">
+                                    <img src="assets/images/Comillas-Testimonios.png" alt="Testimonios">
+                                    <article>
+                                        <h2><strong> Lucila </strong> Ramillete</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore </p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="formulario-2">
             <div class="form">
-                <p> <strong> YA ES HORA </strong> <br> de llevar tu EMPPRESA <br> <strong class="text"> al SIGUIENTE NIVEL </strong></p>
-                <form action="/action_page.php">
-                    <input type="text" placeholder="Nombre">
-                    <input type="number" placeholder="Celular">
-                    <input type="email" placeholder="Email">
-                    <button type="submit" class="btn btn-default bton">INICIAR <strong> AHORA </strong></button>
-                </form>
+                <div class="item">
+                    <p> <strong> YA es hora  </strong> de <br> llevar tu Empresa <br> <strong> al Siguiente Nivel </strong></p>
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Nombre">
+                        <input type="number" placeholder="Celular">
+                        <input type="email" placeholder="Email">
+                        <button type="submit" class="btn btn-default bton">INICIAR AHORA </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="accordion">
+            <div class="row groups">
+                <div class="col-sm-6 group-1">
+                    <div id="accordion1">
+                        <h2>Encuentra <strong> la Respuesta </strong><br> a todas tus dudas.</h2>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <span>¿Qué pasa si tengo procesos en mi contra?</span>
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                <i class="icon fas fa-caret-down"></i>
+                                          </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion1">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <span>¿Los bancos siguen llamando?</span>
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+                                                <i class="icon fas fa-caret-down"></i>
+                                          </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion1">
+                                <div class="card-body">
+                                    <p>No, los bancos son instituciones que han aprendido que en ley de insolvencia se debe respetar las personas.</p>
+                                    <p> La superfinanciera presta a tomar medidas sobre cualquier acoso que se pueda presentar de parte de las entidades financieras</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 group-2">
+                    <div id="accordion2">
+                        <div class="card">
+                            <div class="card-header" id="headingfour">
+                                <h5 class="mb-0">
+                                    <span>¿Pueden embargarme mi sueldo los bancos en ley de insolvencia?</span>
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapsefour" aria-expanded="true" aria-controls="collapsefour">
+                                                <i class="icon fas fa-caret-down"></i>
+                                          </button>
+                                </h5>
+                            </div>
+                            <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#accordion2">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingfive">
+                                <h5 class="mb-0">
+                                    <span>¿Quién puede acudir a los procedimientos de insolvencia del Código General del Proceso?</span>
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                                                <i class="icon fas fa-caret-down"></i>
+                                          </button>
+                                </h5>
+                            </div>
+                            <div id="collapsefive" class="collapse" aria-labelledby="headingfive" data-parent="#accordion2">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingsix">
+                                <h5 class="mb-0">
+                                    <span>¿Puedo presentar mi solicitud de insolvencia en otra ciudad diferente a donde vivo o trabajo?</span>
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+                                                <i class="icon fas fa-caret-down"></i>
+                                          </button>
+                                </h5>
+                            </div>
+                            <div id="collapsesix" class="collapse" aria-labelledby="headingsix" data-parent="#accordion2">
+                                <div class="card-body">
+                                    <p> No, hemos conocido decenas de casos donde abogados inexpertos, o que se creen más vivos que la ley, ilusionan a los clientes y el proceso se los terminan tumbando.</p>
+                                    <p>¡No pierda su dinero!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="whatsapp">
             <div class="contenedor">
-                <p><strong> Chatea  </strong> <i class="fas fa-check-double"></i> <br> con nosotros</p>
+                <p><strong>Chat acti<img class="check" src="assets/images/Check.png"> &nbsp;o</strong></p>
                 <a href="https://api.whatsapp.com/send?phone=573166170703" target="_blank">
-                    <img src="assets/images/whatsapp.png" alt="Whatsapp-Abogados Estrategia Empresarial">
+                    <img class="whats" src="assets/images/whatsapp.png" alt="Whatsapp-Abogados Estrategia Empresarial">
                 </a>
             </div>
         </section>
@@ -229,7 +470,7 @@
         <section class="formulario-3">
             <div class="row form-description">
                 <div class="col-sm-6 description">
-                    <p> <strong> ¿NECESITAS </strong> <br> uno de estos <br> <strong> ABOGADOS? </strong>
+                    <p> <strong> ¿Necesitas  </strong> uno de <br> estos <strong> Abogados? </strong>
                     </p>
                 </div>
                 <div class="col-sm-6 form">
@@ -241,7 +482,7 @@
                         <input type="text" placeholder="Nombre">
                         <input type="number" placeholder="Celular">
                         <input type="email" placeholder="Email">
-                        <button type="submit" class="btn btn-default bton"> Totamente <strong> GRATIS </strong></button>
+                        <button type="submit" class="btn btn-default bton"> TOTALMENTE GRATIS</button>
                     </form>
                 </div>
             </div>
@@ -313,11 +554,18 @@
     </main>
 
     <footer>
-        <div class="row">
-            <div class="col-sm-8">
+        <div class="row items">
+            <div class="col-sm-6 item1">
+                <div class="logo">
+                    <a class="navbar-brand" href="http://abogadosestrategiaempresarial.com/" title="Abogados-Estrategia-Empresariales" rel="home">
+                        <img src="assets/images/Logo-Footer.png" alt="Abogados-Empresariales">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 item2">
                 <ul>
                     <li>
-                        <i class="fas fa-map-marker-alt"></i>EDIFICIO ICONO 93 - Calle 93B Nª16-08 - CONSULTORIO 108
+                        <i class="fas fa-map-marker-alt"></i>EDIFICIO ICONO 93 - Calle 93B Nª16-08 <span> CONSULTORIO 108</span>
                     </li>
                     <li>
                         <i class="fas fa-phone-volume"></i>3166170703 - 3212673089
@@ -326,13 +574,6 @@
                         <i class="fas fa-envelope"></i>Geocalle93@gmail.com
                     </li>
                 </ul>
-            </div>
-            <div class="col-sm-4">
-                <div class="logo">
-                    <a class="navbar-brand" href="http://abogadosestrategiaempresarial.com/" title="Abogados-Estrategia-Empresariales" rel="home">
-                        <img src="assets/images/Logo-Abogados-Empresariales.png" alt="Abogados-Empresariales">
-                    </a>
-                </div>
             </div>
         </div>
     </footer>

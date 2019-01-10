@@ -1,0 +1,35 @@
+body {
+    main {
+        .preparations {
+            background-image: url('../../assets/images/Fondo-Listos.jpg');
+            background-size: cover;
+            .items {
+                margin-right: 0;
+                padding-top: 32%;
+                padding-bottom: 5%;
+                @include breakpoint(phone) {
+                    padding-top: 55%;
+                    padding-bottom: 15%;
+                }
+                .item1 {
+                    text-align: right;
+                    @include breakpoint(phone) {
+                        text-align: center;
+                    }
+                }
+                .item2 {
+                    p {
+                        color: #FFFFFF;
+                        font-size: 36px;
+                        line-height: 1;
+                        margin-top: 33px;
+                        @include breakpoint(phone) {
+                            text-align: center;
+                            font-size: 19px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

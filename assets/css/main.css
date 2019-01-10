@@ -1,9 +1,13 @@
 html body {
-  font-family: 'Raleway', sans-serif;
-  color: #046488; }
+  font-family: 'Raleway', sans-serif; }
+  html body header {
+    position: absolute;
+    width: 100%;
+    z-index: 1; }
 
 body header .head {
-  text-align: center; }
+  text-align: center;
+  color: #FFFFFF; }
   @media (min-width: 1025px) {
     body header .head {
       text-align: left;
@@ -30,17 +34,11 @@ body header .head {
       @media (max-width: 667px) {
         body header .head .row .col-sm-6 .contact {
           margin-bottom: 15px; } }
-      @media (min-width: 1025px) {
-        body header .head .row .col-sm-6 .contact {
-          text-align: right; } }
-      @media (min-width: 668px) and (max-width: 1024px) {
-        body header .head .row .col-sm-6 .contact {
-          text-align: right; } }
       body header .head .row .col-sm-6 .contact i {
         float: left;
-        font-size: 49px;
-        margin-top: 24px;
-        color: #046488; }
+        font-size: 35px;
+        margin-top: 20px;
+        color: #FFFFFF; }
         @media (max-width: 667px) {
           body header .head .row .col-sm-6 .contact i {
             float: none;
@@ -48,320 +46,255 @@ body header .head {
             margin-bottom: 15px; } }
         @media (min-width: 668px) and (max-width: 1024px) {
           body header .head .row .col-sm-6 .contact i {
-            margin-left: 13%; } }
+            margin-left: 33%;
+            margin-right: 3%; } }
         @media (min-width: 1025px) {
           body header .head .row .col-sm-6 .contact i {
-            margin-left: 53%; } }
+            margin-left: 53%;
+            margin-right: 3%; } }
       body header .head .row .col-sm-6 .contact p {
-        font-size: 32px;
+        font-size: 24px;
         font-weight: 900;
         margin: 0;
         font-family: 'Roboto', sans-serif; }
 
-body header .headboard {
-  background-image: url("../../assets/images/Fondo-Cabezera.png");
-  background-size: cover; }
+body main .headboard {
+  background-image: url("../../assets/images/Portada.jpg");
+  background-size: cover;
+  height: 730px; }
   @media (max-width: 667px) {
-    body header .headboard .team {
+    body main .headboard {
+      height: auto; } }
+  @media (min-width: 668px) and (max-width: 1024px) {
+    body main .headboard {
+      height: auto; } }
+  @media (max-width: 667px) {
+    body main .headboard .team {
       margin-top: 34px;
       width: 100%; } }
   @media (min-width: 668px) and (max-width: 1024px) {
-    body header .headboard .team {
-      width: 100%;
-      margin-top: 0; } }
+    body main .headboard .team {
+      width: 50%;
+      margin-top: -166px; } }
   @media (min-width: 1025px) {
-    body header .headboard .team {
-      margin-top: -126px; } }
-  body header .headboard .form-description {
+    body main .headboard .team {
+      margin-top: -269px;
+      margin-left: 5%;
+      width: 38%; } }
+  body main .headboard .form-description {
     margin-left: 0;
-    margin-right: 0; }
-    body header .headboard .form-description .description {
-      color: #FFFFFF;
-      margin-top: 152px; }
+    margin-right: 0;
+    padding-top: 16%; }
+    @media (max-width: 667px) {
+      body main .headboard .form-description {
+        padding-top: 100%; } }
+    @media (min-width: 668px) and (max-width: 1024px) {
+      body main .headboard .form-description {
+        padding-top: 25%; } }
+    body main .headboard .form-description .description {
+      color: #FFFFFF; }
       @media (max-width: 667px) {
-        body header .headboard .form-description .description {
+        body main .headboard .form-description .description {
           text-align: center;
           margin-top: 60px; } }
       @media (min-width: 668px) and (max-width: 1024px) {
-        body header .headboard .form-description .description {
-          margin-top: 259px;
+        body main .headboard .form-description .description {
           padding-left: 5%; } }
       @media (min-width: 1025px) {
-        body header .headboard .form-description .description {
-          padding-left: 13%; } }
-      @media (min-width: 668px) and (max-width: 1024px) {
-        body header .headboard .form-description .description h1 {
-          font-size: 26px; } }
-      body header .headboard .form-description .description img {
-        float: left;
-        margin-top: 17px; }
+        body main .headboard .form-description .description {
+          padding-left: 7%; } }
+      body main .headboard .form-description .description p {
+        line-height: 1;
+        font-size: 26px; }
         @media (max-width: 667px) {
-          body header .headboard .form-description .description img {
-            float: none; } }
-        @media (min-width: 668px) and (max-width: 1024px) {
-          body header .headboard .form-description .description img {
-            margin-top: 9px; } }
-      body header .headboard .form-description .description p {
-        margin-bottom: 0;
-        font-size: 31px; }
-  body header .headboard .form {
-    margin-top: 104px; }
+          body main .headboard .form-description .description p {
+            font-size: 24px; } }
+        body main .headboard .form-description .description p strong {
+          font-size: 65px; }
+          @media (max-width: 667px) {
+            body main .headboard .form-description .description p strong {
+              font-size: 36px; } }
+    body main .headboard .form-description img {
+      float: left;
+      margin-top: 17px; }
+      @media (max-width: 667px) {
+        body main .headboard .form-description img {
+          float: none; } }
+      @media (min-width: 668px) and (max-width: 1024px) {
+        body main .headboard .form-description img {
+          margin-top: 9px; } }
+  body main .headboard .form .item {
+    background-color: #FFFFFF;
+    text-align: center;
+    width: 62%;
+    padding-right: 7%;
+    padding-left: 7%;
+    padding-top: 5%;
+    padding-bottom: 8%;
+    border-radius: 30px; }
     @media (max-width: 667px) {
-      body header .headboard .form {
-        margin-top: 20px;
-        padding-right: 13%;
-        padding-left: 13%; } }
+      body main .headboard .form .item {
+        width: 100%;
+        padding-top: 10%;
+        padding-bottom: 15%; } }
     @media (min-width: 668px) and (max-width: 1024px) {
-      body header .headboard .form {
-        padding-right: 7%; } }
-    @media (min-width: 1025px) {
-      body header .headboard .form {
-        padding-right: 18%; } }
-    body header .headboard .form form input {
+      body main .headboard .form .item {
+        width: 90%; } }
+    body main .headboard .form .item form input {
       display: block;
       width: 100%;
       height: 50px;
       margin-bottom: 20px;
-      border-radius: 36px;
+      border-radius: 6px;
+      border: solid 1px #D6D6D6;
       padding-left: 3%;
-      background-color: transparent;
-      border: solid 2px #FFFFFF; }
-    body header .headboard .form form ::placeholder {
-      color: #FFFFFF; }
-    body header .headboard .form form .btn {
+      -webkit-box-shadow: 0px 6px 26px -7px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 6px 26px -7px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 6px 26px -7px rgba(0, 0, 0, 0.75); }
+    body main .headboard .form .item form ::placeholder {
+      color: #03132E;
+      font-weight: bold; }
+    body main .headboard .form .item form .btn {
       width: 100%;
-      background-color: #EFC462;
+      background-color: #F2B200;
       height: 50px;
-      border-radius: 33px;
-      border: solid 1px #EFC462;
-      color: #000000;
-      font-size: 27px;
-      font-weight: bold;
-      transition: 1s; }
-    body header .headboard .form form .btn:hover {
-      border: solid 2px #EFC462;
+      border-radius: 6px;
+      border: solid 1px #F2B200;
+      color: #FFFFFF;
+      font-size: 23px;
+      font-weight: 500;
+      transition: 1s;
+      -webkit-box-shadow: 0px 6px 26px -7px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 6px 26px -7px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 6px 26px -7px rgba(0, 0, 0, 0.75); }
+      @media (max-width: 667px) {
+        body main .headboard .form .item form .btn {
+          font-size: 20px; } }
+    body main .headboard .form .item form .btn:hover {
+      border: solid 1px #F2B200;
       background-color: transparent;
-      color: #EFC462; }
-    body header .headboard .form img {
+      color: #F2B200; }
+    body main .headboard .form .item img {
       float: left;
       margin-top: 14px; }
-    body header .headboard .form p {
-      color: #FFFFFF; }
+    body main .headboard .form .item p {
+      color: #03132E; }
       @media (max-width: 667px) {
-        body header .headboard .form p {
+        body main .headboard .form .item p {
           font-size: 23px;
           margin-top: 8px; } }
       @media (min-width: 668px) and (max-width: 1024px) {
-        body header .headboard .form p {
+        body main .headboard .form .item p {
           font-size: 25px; } }
       @media (min-width: 1025px) {
-        body header .headboard .form p {
+        body main .headboard .form .item p {
           font-size: 33px; } }
 
 body footer {
   background-color: #FFFFFF; }
-  body footer .row {
+  body footer .items {
     margin-right: 0; }
-    body footer .row .col-sm-8 ul {
+    body footer .items .item2 ul {
       margin-top: 37px; }
       @media (min-width: 1025px) {
-        body footer .row .col-sm-8 ul {
+        body footer .items .item2 ul {
           margin-left: 9%;
           margin-top: 40px; } }
-      body footer .row .col-sm-8 ul li {
+      body footer .items .item2 ul li {
         list-style: none;
         font-size: 13px;
         margin-top: 5px;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: bold;
-        font-style: italic;
-        color: #000000; }
+        color: #03132E;
+        margin-bottom: 9px; }
         @media (min-width: 1025px) {
-          body footer .row .col-sm-8 ul li {
+          body footer .items .item2 ul li {
             font-size: 22px;
             margin-top: 0; } }
-        body footer .row .col-sm-8 ul li i {
+        body footer .items .item2 ul li i {
           width: 8%;
-          color: #000000; }
+          color: #F2B200; }
           @media (min-width: 1025px) {
-            body footer .row .col-sm-8 ul li i {
+            body footer .items .item2 ul li i {
               width: 5%;
               letter-spacing: 16px; } }
-    body footer .row .logo {
+        body footer .items .item2 ul li span {
+          margin-left: 5%; }
+          @media (max-width: 667px) {
+            body footer .items .item2 ul li span {
+              margin-left: 8%; } }
+          @media (min-width: 668px) and (max-width: 1024px) {
+            body footer .items .item2 ul li span {
+              margin-left: 8%; } }
+    body footer .items .logo {
       text-align: center;
       margin-top: 11px;
       margin-bottom: 23px; }
       @media (max-width: 667px) {
-        body footer .row .logo img {
+        body footer .items .logo img {
           margin-left: 4%;
           width: 100%; } }
       @media (min-width: 668px) and (max-width: 1024px) {
-        body footer .row .logo img {
+        body footer .items .logo img {
           width: 100%;
           margin-top: 23px; } }
       @media (min-width: 1025px) {
-        body footer .row .logo {
-          margin-top: 40px;
+        body footer .items .logo {
+          margin-top: 70px;
           margin-bottom: 40px; } }
 
-body main .titulo {
-  padding-top: 5%;
-  padding-bottom: 5%; }
+body main .column {
+  color: #4F4F4F;
+  background-image: url("../../assets/images/Fondo-Asesoria.jpg");
+  background-size: cover;
+  padding-top: 8%;
+  padding-bottom: 8%; }
+  body main .column .items {
+    margin-right: 0; }
+    body main .column .items .item1 {
+      text-align: right; }
+      @media (max-width: 667px) {
+        body main .column .items .item1 {
+          text-align: center; } }
+    body main .column .items .item2 p {
+      font-size: 30px;
+      line-height: 1;
+      margin-top: 30px; }
+      @media (max-width: 667px) {
+        body main .column .items .item2 p {
+          text-align: center;
+          font-size: 20px; } }
+      body main .column .items .item2 p strong {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800; }
   @media (max-width: 667px) {
-    body main .titulo {
+    body main .column {
       padding-top: 12%;
       padding-bottom: 12%; } }
-  body main .titulo h2 {
-    text-align: center;
-    font-size: 51px; }
-    @media (max-width: 667px) {
-      body main .titulo h2 {
-        font-size: 40px; } }
-  body main .titulo strong {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800; }
-
-body main .block-services {
-  background: linear-gradient(to right, #FFFFFF 0%, #DFDFDF 100%); }
-  body main .block-services .image-description {
-    margin-right: 0; }
-    body main .block-services .image-description .image img:nth-child(1) {
-      position: absolute; }
-      @media (max-width: 667px) {
-        body main .block-services .image-description .image img:nth-child(1) {
-          left: 18%;
-          top: 332px; } }
-      @media (min-width: 668px) and (max-width: 1024px) {
-        body main .block-services .image-description .image img:nth-child(1) {
-          left: 59%;
-          top: 186px;
-          width: 40%; } }
-      @media (min-width: 1025px) {
-        body main .block-services .image-description .image img:nth-child(1) {
-          left: 58%;
-          top: 250px; } }
-      @media screen and (min-width: 1900px) {
-        body main .block-services .image-description .image img:nth-child(1) {
-          left: 66%;
-          top: 416px; } }
-    @media (max-width: 667px) {
-      body main .block-services .image-description .image picture img {
-        width: 104%; } }
-    @media (min-width: 668px) and (max-width: 1024px) {
-      body main .block-services .image-description .image picture img {
-        width: 113%; } }
-    @media screen and (min-width: 1900px) {
-      body main .block-services .image-description .image picture img {
-        width: 100%; } }
-    @media (max-width: 667px) {
-      body main .block-services .image-description .description {
-        margin-top: 270px;
-        padding-left: 15%; } }
-    @media (min-width: 668px) and (max-width: 1024px) {
-      body main .block-services .image-description .description {
-        margin-top: 60px; } }
-    @media (min-width: 1025px) {
-      body main .block-services .image-description .description {
-        margin-top: 174px; } }
-    body main .block-services .image-description .description p {
-      line-height: 1;
-      margin-bottom: 45px; }
-      @media (max-width: 667px) {
-        body main .block-services .image-description .description p {
-          font-size: 35px; } }
-      @media (min-width: 668px) and (max-width: 1024px) {
-        body main .block-services .image-description .description p {
-          font-size: 34px;
-          margin-left: 7%;
-          margin-bottom: 28px; } }
-      @media (min-width: 1025px) {
-        body main .block-services .image-description .description p {
-          font-size: 44px; } }
-    body main .block-services .image-description .description strong:nth-child(1) {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 900; }
-    body main .block-services .image-description .description ul li {
-      color: #ADADAD; }
-      body main .block-services .image-description .description ul li span {
-        color: #046488;
-        font-family: 'Roboto', sans-serif; }
-        @media (max-width: 667px) {
-          body main .block-services .image-description .description ul li span {
-            font-size: 16px; } }
-        @media (min-width: 668px) and (max-width: 1024px) {
-          body main .block-services .image-description .description ul li span {
-            font-size: 19px; } }
-        @media (min-width: 1025px) {
-          body main .block-services .image-description .description ul li span {
-            font-size: 24px; } }
-    body main .block-services .image-description .description button {
-      color: #046488;
-      font-size: 25px;
-      background-color: #EFC462;
-      height: 55px;
-      border-radius: 39px;
-      margin-top: 15px;
-      border: solid 1px #EFC462;
-      cursor: pointer;
-      transition: 1s; }
-      @media (max-width: 667px) {
-        body main .block-services .image-description .description button {
-          font-size: 19px;
-          width: 100%;
-          margin-bottom: 43px; } }
-      @media (min-width: 668px) and (max-width: 1024px) {
-        body main .block-services .image-description .description button {
-          width: 100%;
-          margin-bottom: 56px; } }
-      @media (min-width: 1025px) {
-        body main .block-services .image-description .description button {
-          width: 61%; } }
-    body main .block-services .image-description .description button:hover {
-      background-color: transparent;
-      color: #EFC462;
-      border: solid 1px #EFC462; }
 
 body main .block-services-2 {
   background: linear-gradient(to right, #FFFFFF 0%, #DFDFDF 100%); }
   body main .block-services-2 .image-description {
     margin-right: 0; }
     body main .block-services-2 .image-description .image {
-      padding-right: 0; }
-      body main .block-services-2 .image-description .image img:nth-child(1) {
-        position: absolute; }
-        @media (max-width: 667px) {
-          body main .block-services-2 .image-description .image img:nth-child(1) {
-            left: 18%;
-            top: -650px; } }
-        @media (min-width: 668px) and (max-width: 1024px) {
-          body main .block-services-2 .image-description .image img:nth-child(1) {
-            left: 9%;
-            top: 186px;
-            width: 40%; } }
-        @media (min-width: 1025px) {
-          body main .block-services-2 .image-description .image img:nth-child(1) {
-            top: 250px; } }
-        @media screen and (min-width: 1900px) {
-          body main .block-services-2 .image-description .image img:nth-child(1) {
-            left: 7%;
-            top: 416px; } }
-      body main .block-services-2 .image-description .image picture img {
-        width: 100%; }
-        @media (max-width: 667px) {
-          body main .block-services-2 .image-description .image picture img {
-            margin-top: -1657px; } }
+      background-image: url("../../assets/images/Abogados-Estrateguia-Empresarial.jpg");
+      background-size: cover; }
+      @media (max-width: 667px) {
+        body main .block-services-2 .image-description .image {
+          padding-top: 70%;
+          padding-bottom: 11%; } }
     body main .block-services-2 .image-description .description {
-      padding-left: 9%; }
+      padding-left: 7%;
+      padding-top: 5%;
+      padding-bottom: 5%; }
       @media (max-width: 667px) {
         body main .block-services-2 .image-description .description {
-          margin-top: 629px;
-          padding-left: 15%; } }
+          padding-left: 15%;
+          padding-top: 15%; } }
       @media (min-width: 668px) and (max-width: 1024px) {
         body main .block-services-2 .image-description .description {
-          margin-top: 60px; } }
-      @media (min-width: 1025px) {
-        body main .block-services-2 .image-description .description {
-          margin-top: 174px; } }
+          padding-left: 2%; } }
       body main .block-services-2 .image-description .description p {
         line-height: 1;
         margin-bottom: 45px; }
@@ -375,14 +308,14 @@ body main .block-services-2 {
             margin-bottom: 28px; } }
         @media (min-width: 1025px) {
           body main .block-services-2 .image-description .description p {
-            font-size: 44px; } }
+            font-size: 38px; } }
       body main .block-services-2 .image-description .description strong:nth-child(1) {
         font-family: 'Montserrat', sans-serif;
         font-weight: 900; }
       body main .block-services-2 .image-description .description ul li {
-        color: #ADADAD; }
+        color: #F2B200; }
         body main .block-services-2 .image-description .description ul li span {
-          color: #046488;
+          color: #4F4F4F;
           font-family: 'Roboto', sans-serif; }
           @media (max-width: 667px) {
             body main .block-services-2 .image-description .description ul li span {
@@ -392,15 +325,15 @@ body main .block-services-2 {
               font-size: 19px; } }
           @media (min-width: 1025px) {
             body main .block-services-2 .image-description .description ul li span {
-              font-size: 24px; } }
+              font-size: 21px; } }
       body main .block-services-2 .image-description .description button {
-        color: #046488;
-        font-size: 25px;
-        background-color: #EFC462;
+        color: #FFFFFF;
+        font-size: 19px;
+        background-color: #F2B200;
         height: 55px;
-        border-radius: 39px;
+        border-radius: 6px;
         margin-top: 15px;
-        border: solid 1px #EFC462;
+        border: solid 1px #F2B200;
         cursor: pointer;
         transition: 1s; }
         @media (max-width: 667px) {
@@ -410,104 +343,72 @@ body main .block-services-2 {
             margin-bottom: 43px; } }
         @media (min-width: 668px) and (max-width: 1024px) {
           body main .block-services-2 .image-description .description button {
-            width: 115%;
-            margin-bottom: 56px; } }
+            width: 91%;
+            margin-left: 9%; } }
         @media (min-width: 1025px) {
           body main .block-services-2 .image-description .description button {
             width: 61%; } }
       body main .block-services-2 .image-description .description button:hover {
         background-color: transparent;
-        color: #EFC462;
-        border: solid 1px #EFC462; }
+        color: #F2B200;
+        border: solid 1px #F2B200; }
 
-body main .profesion {
-  background: linear-gradient(to right, #666666 0%, #DFDFDF 100%); }
-  body main .profesion .image-description {
-    margin-left: 0;
-    margin-right: 0; }
-    body main .profesion .image-description .image {
-      text-align: right;
-      margin-top: 47px; }
+body main .column-2 {
+  background-color: #DBDBDB; }
+  @media (max-width: 667px) {
+    body main .column-2 {
+      padding-bottom: 84%; } }
+  body main .column-2 .items {
+    margin-right: 0;
+    color: #4F4F4F; }
+    body main .column-2 .items .item1 {
+      text-align: right; }
       @media (max-width: 667px) {
-        body main .profesion .image-description .image img {
-          width: 100%; } }
-      @media (min-width: 668px) and (max-width: 1024px) {
-        body main .profesion .image-description .image img {
-          width: 100%; } }
+        body main .column-2 .items .item1 {
+          position: absolute;
+          margin-top: 199px; } }
+      @media (max-width: 667px) {
+        body main .column-2 .items .item1 img {
+          width: 90%; } }
     @media (max-width: 667px) {
-      body main .profesion .image-description .description {
-        margin-top: 0; } }
-    @media (min-width: 668px) and (max-width: 1024px) {
-      body main .profesion .image-description .description {
-        margin-top: 213px;
-        margin-left: -4%; } }
-    @media (min-width: 1025px) {
-      body main .profesion .image-description .description {
-        margin-top: 240px;
-        margin-left: -1%; } }
-    body main .profesion .image-description .description h3 {
-      background-color: #0478BC;
-      color: #FFFFFF;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 800;
-      margin-left: -4%;
-      border-radius: 0px 290px 290px 0px;
-      height: 86px;
-      padding-left: 4%;
-      line-height: 1; }
+      body main .column-2 .items .item2 {
+        text-align: center;
+        padding-right: 0; } }
+    body main .column-2 .items .item2 p {
+      font-size: 32px;
+      line-height: 1;
+      margin-top: 120px; }
       @media (max-width: 667px) {
-        body main .profesion .image-description .description h3 {
-          margin-left: 0;
-          border-radius: 290px;
-          width: 100%;
-          padding-left: 8%;
-          height: 92px;
-          padding-top: 5.2%; } }
-      @media (min-width: 668px) and (max-width: 1024px) {
-        body main .profesion .image-description .description h3 {
-          width: 80%;
-          padding-top: 4.4%; } }
-      @media (min-width: 1025px) {
-        body main .profesion .image-description .description h3 {
-          width: 44%;
-          padding-top: 2.2%; } }
-      body main .profesion .image-description .description h3 strong {
-        font-family: 'Raleway', sans-serif; }
-    body main .profesion .image-description .description img {
-      float: right;
-      margin-right: 42%;
-      margin-top: -96px; }
-      @media (max-width: 667px) {
-        body main .profesion .image-description .description img {
-          display: none; } }
-      @media (min-width: 668px) and (max-width: 1024px) {
-        body main .profesion .image-description .description img {
-          margin-right: -9%; } }
-    body main .profesion .image-description .description p {
-      color: #FFFFFF; }
-      @media (max-width: 667px) {
-        body main .profesion .image-description .description p {
-          margin-left: 10%;
-          margin-bottom: 46px; } }
-      body main .profesion .image-description .description p strong {
-        font-size: 24px; }
+        body main .column-2 .items .item2 p {
+          font-size: 25px;
+          margin-top: 78px; } }
 
 body main .habilidades {
-  background: linear-gradient(to right, #FFFFFF 0%, #D8E0EB 100%);
+  background-image: url("../../assets/images/Fondo-Diferencia.jpg");
   padding-top: 10%;
-  padding-bottom: 10%; }
+  padding-bottom: 10%;
+  padding-left: 10%;
+  padding-right: 10%; }
   @media (max-width: 667px) {
     body main .habilidades {
       padding-top: 23%;
       padding-bottom: 23%; } }
+  @media (min-width: 668px) and (max-width: 1024px) {
+    body main .habilidades {
+      padding-left: 5%;
+      padding-right: 5%; } }
+  body main .habilidades h2 {
+    text-align: center;
+    color: #FFFFFF; }
   body main .habilidades .row {
     margin-left: 0;
     margin-right: 0;
-    text-align: center; }
+    text-align: center;
+    margin-top: 80px; }
     body main .habilidades .row .check p {
-      color: #6D6D6D;
+      color: #FFFFFF;
       font-family: 'Roboto', sans-serif;
-      font-size: 27px;
+      font-size: 21px;
       margin-top: 50px; }
       @media (max-width: 667px) {
         body main .habilidades .row .check p {
@@ -516,7 +417,7 @@ body main .habilidades {
       body main .habilidades .row .check p strong {
         font-family: 'Open Sans', sans-serif;
         font-weight: 800;
-        font-size: 36px; }
+        font-size: 28px; }
         @media (max-width: 667px) {
           body main .habilidades .row .check p strong {
             font-size: 31px; } }
@@ -525,7 +426,7 @@ body main .habilidades {
         margin-top: 75px; } }
 
 body main .block-equipo {
-  background: linear-gradient(to right, #046488 0%, #003140 100%);
+  background-color: #03132E;
   color: #FFFFFF;
   text-align: center;
   padding-top: 10%;
@@ -540,8 +441,12 @@ body main .block-equipo {
     body main .block-equipo {
       padding-left: 5%;
       padding-right: 5%; } }
+  body main .block-equipo h2 {
+    text-align: center;
+    color: #FFFFFF; }
   body main .block-equipo .group-1 {
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    margin-top: 90px; }
   body main .block-equipo .group-1,
   body main .block-equipo .group-2 {
     margin-left: 0;
@@ -569,24 +474,28 @@ body main .block-equipo {
         font-size: 13px; }
     body main .block-equipo .group-1 img,
     body main .block-equipo .group-2 img {
-      background-color: white;
-      border-radius: 120px; }
+      width: 50%; }
+      @media (max-width: 667px) {
+        body main .block-equipo .group-1 img,
+        body main .block-equipo .group-2 img {
+          width: 80%; } }
     body main .block-equipo .group-1 .pluma,
     body main .block-equipo .group-2 .pluma {
       background-color: transparent;
       margin-top: 27px; }
   body main .block-equipo button {
     color: #033949;
-    background-color: #EFC462;
+    background-color: #F2B200;
     font-size: 41px;
-    border-radius: 50px;
+    border-radius: 6px;
     width: 34%;
-    border: solid 1px #EFC462;
+    border: solid 1px #F2B200;
     cursor: pointer;
     transition: 1s;
     position: absolute;
     right: 33%;
-    margin-top: 114px; }
+    margin-top: 100px;
+    font-weight: bold; }
     @media (max-width: 667px) {
       body main .block-equipo button {
         font-size: 33px;
@@ -604,9 +513,13 @@ body main .block-equipo {
     body main .block-equipo button strong {
       font-family: 'Montserrat', sans-serif;
       font-weight: 800; }
+  body main .block-equipo button:hover {
+    color: #F2B200;
+    background-color: #033949;
+    border: solid 1px #033949; }
 
 body main .formulario-2 {
-  background-image: url("../../assets/images/Fondo-Form-2.jpg");
+  background-image: url("../../assets/images/Fondo-Formulario-2.jpg");
   background-size: cover;
   padding-top: 10%;
   padding-bottom: 10%; }
@@ -626,57 +539,49 @@ body main .formulario-2 {
     body main .formulario-2 .form {
       margin-left: 62%;
       padding-right: 11%; } }
-  body main .formulario-2 .form p {
-    font-size: 32px;
-    line-height: 1; }
-    @media (max-width: 667px) {
-      body main .formulario-2 .form p {
-        font-size: 27px; } }
-    body main .formulario-2 .form p strong:nth-child(1) {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 800; }
-      @media (max-width: 667px) {
-        body main .formulario-2 .form p strong:nth-child(1) {
-          font-size: 39px; } }
-      @media (min-width: 668px) and (max-width: 1024px) {
-        body main .formulario-2 .form p strong:nth-child(1) {
-          font-size: 54px; } }
-      @media (min-width: 1025px) {
-        body main .formulario-2 .form p strong:nth-child(1) {
-          font-size: 61px; } }
-    body main .formulario-2 .form p .text {
-      font-size: 37px; }
-      @media (max-width: 667px) {
-        body main .formulario-2 .form p .text {
-          font-size: 29px; } }
-  body main .formulario-2 .form form input {
-    display: block;
-    width: 100%;
-    height: 56px;
-    margin-bottom: 21px;
-    border-radius: 44px;
-    border: solid 2px #9B9B9B;
-    padding-left: 4%; }
-  body main .formulario-2 .form form ::placeholder {
-    color: #9B9B9B; }
-  body main .formulario-2 .form form .btn {
-    width: 100%;
+  body main .formulario-2 .form .item {
     background-color: #046488;
-    color: #FFFFFF;
-    font-style: italic;
-    font-size: 36px;
-    border-radius: 50px;
-    transition: 1s; }
-    @media (max-width: 667px) {
-      body main .formulario-2 .form form .btn {
-        font-size: 29px; } }
-    body main .formulario-2 .form form .btn strong {
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    border-radius: 25px; }
+    body main .formulario-2 .form .item p {
+      font-size: 28px;
+      line-height: 1;
+      color: #FFFFFF; }
+      body main .formulario-2 .form .item p strong {
+        font-family: 'Open Sans', sans-serif; }
+      @media (max-width: 667px) {
+        body main .formulario-2 .form .item p {
+          font-size: 21px; } }
+    body main .formulario-2 .form .item form input {
+      display: block;
+      width: 100%;
+      height: 56px;
+      margin-bottom: 21px;
+      border-radius: 6px;
+      padding-left: 4%;
+      border: none; }
+    body main .formulario-2 .form .item form ::placeholder {
+      color: #03132E;
+      font-weight: 800; }
+    body main .formulario-2 .form .item form .btn {
+      width: 100%;
+      background-color: #F2B200;
+      color: #03132E;
+      font-size: 25px;
+      border-radius: 6px;
+      transition: 1s;
       font-family: 'Montserrat', sans-serif;
       font-weight: 800; }
-  body main .formulario-2 .form form .btn:hover {
-    background-color: transparent;
-    color: #046488;
-    border-color: #046488; }
+      @media (max-width: 667px) {
+        body main .formulario-2 .form .item form .btn {
+          font-size: 20px; } }
+    body main .formulario-2 .form .item form .btn:hover {
+      background-color: transparent;
+      color: #F2B200;
+      border-color: #F2B200; }
 
 body main .whatsapp {
   background-image: url("../../assets/images/fondo-whatsapp.jpg");
@@ -691,25 +596,28 @@ body main .whatsapp {
       font-size: 36px;
       font-style: italic;
       line-height: 1; }
-      body main .whatsapp .contenedor p i {
-        color: #00C462;
-        font-size: 50px; }
       body main .whatsapp .contenedor p strong {
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
         font-weight: 900;
         font-size: 46px;
-        margin-left: 2%; }
+        margin-right: 9%; }
         @media (max-width: 667px) {
           body main .whatsapp .contenedor p strong {
             margin-left: 8%; } }
-    body main .whatsapp .contenedor img {
+    body main .whatsapp .contenedor .check {
+      position: absolute;
+      margin-top: -11px;
+      margin-left: 5px; }
+    body main .whatsapp .contenedor img.whats {
       transition: 1s;
-      cursor: pointer; }
+      cursor: pointer;
+      margin-top: -50px; }
       @media (max-width: 667px) {
-        body main .whatsapp .contenedor img {
+        body main .whatsapp .contenedor img.whats {
           width: 80%;
           margin-top: 20px; } }
-    body main .whatsapp .contenedor img:hover {
+    body main .whatsapp .contenedor img.whats:hover {
       transform: scale(1.2); }
 
 body main .formulario-3 {
@@ -735,15 +643,14 @@ body main .formulario-3 {
         line-height: 1; }
         @media (max-width: 667px) {
           body main .formulario-3 .form-description .description p {
-            font-size: 37px; } }
+            font-size: 32px; } }
         @media (min-width: 668px) and (max-width: 1024px) {
           body main .formulario-3 .form-description .description p {
             font-size: 40px; } }
         @media (min-width: 1025px) {
           body main .formulario-3 .form-description .description p {
-            font-size: 65px; } }
+            font-size: 49px; } }
         body main .formulario-3 .form-description .description p strong {
-          font-family: 'Montserrat', sans-serif;
           font-weight: 800; }
     body main .formulario-3 .form-description .form {
       text-align: center;
@@ -757,7 +664,7 @@ body main .formulario-3 {
           padding-left: 4%;
           padding-right: 4%; } }
       body main .formulario-3 .form-description .form p {
-        font-size: 31px;
+        font-size: 25px;
         line-height: 1;
         margin-right: 6%; }
         @media (max-width: 667px) {
@@ -765,7 +672,6 @@ body main .formulario-3 {
             margin-right: 0;
             font-size: 24px; } }
         body main .formulario-3 .form-description .form p strong {
-          font-family: 'Montserrat', sans-serif;
           font-weight: 800;
           font-size: 52px;
           margin-left: 7%; }
@@ -788,20 +694,21 @@ body main .formulario-3 {
         width: 100%;
         height: 60px;
         margin-bottom: 24px;
-        border-radius: 46px;
-        background-color: transparent;
+        border-radius: 6px;
+        background-color: #FFFFFF;
         padding-left: 4%;
         border: solid 2px #ffffff; }
       body main .formulario-3 .form-description .form form ::placeholder {
-        color: #FFFFFF; }
+        color: #03132E;
+        font-weight: bold; }
       body main .formulario-3 .form-description .form form .btn {
         width: 100%;
-        background-color: #EFC462;
+        background-color: #F2B200;
         color: #046488;
-        font-style: italic;
-        font-size: 31px;
-        border-radius: 50px;
-        transition: 1s; }
+        font-size: 25px;
+        border-radius: 6px;
+        transition: 1s;
+        font-weight: bold; }
         @media (max-width: 667px) {
           body main .formulario-3 .form-description .form form .btn {
             font-size: 20px; } }
@@ -809,8 +716,8 @@ body main .formulario-3 {
           font-family: 'Montserrat', sans-serif;
           font-weight: 800; }
       body main .formulario-3 .form-description .form form .btn:hover {
-        background-color: transparent;
-        color: #FFFFFF;
+        background-color: #046488;
+        color: #F2B200;
         border-color: #046488; }
 
 body main .popups .modal-dialog {
@@ -903,3 +810,265 @@ body main .popups .modal-dialog {
         background-color: transparent;
         color: #000000;
         border-color: #000000; }
+
+body header .menu hr {
+  background-color: #EFC462;
+  width: 71%;
+  margin-left: 9%; }
+
+body header .menu .navbar {
+  margin-top: -26px; }
+  @media (max-width: 667px) {
+    body header .menu .navbar {
+      margin-top: -13px; } }
+  @media (min-width: 668px) and (max-width: 1024px) {
+    body header .menu .navbar {
+      margin-top: -13px; } }
+  body header .menu .navbar button {
+    background-color: #FFFFFF; }
+  body header .menu .navbar #navbarNav ul {
+    margin-right: 13%;
+    width: 43%; }
+    @media (max-width: 667px) {
+      body header .menu .navbar #navbarNav ul {
+        width: 100%;
+        padding-left: 4%;
+        margin-top: 10px;
+        background-color: #FFFFFF; } }
+    @media (min-width: 668px) and (max-width: 1024px) {
+      body header .menu .navbar #navbarNav ul {
+        width: 100%;
+        padding-left: 4%;
+        margin-top: 10px;
+        background-color: #FFFFFF; } }
+    body header .menu .navbar #navbarNav ul .nav-item {
+      margin-right: 3%; }
+      body header .menu .navbar #navbarNav ul .nav-item .nav-link {
+        color: #FFFFFF; }
+        @media (max-width: 667px) {
+          body header .menu .navbar #navbarNav ul .nav-item .nav-link {
+            color: #03132E; } }
+        @media (min-width: 668px) and (max-width: 1024px) {
+          body header .menu .navbar #navbarNav ul .nav-item .nav-link {
+            color: #03132E; } }
+    body header .menu .navbar #navbarNav ul .active,
+    body header .menu .navbar #navbarNav ul .nav-item:hover {
+      border-top: solid 7px #EFC462;
+      margin-top: -2px;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px; }
+
+body main .preparations {
+  background-image: url("../../assets/images/Fondo-Listos.jpg");
+  background-size: cover; }
+  body main .preparations .items {
+    margin-right: 0;
+    padding-top: 32%;
+    padding-bottom: 5%; }
+    @media (max-width: 667px) {
+      body main .preparations .items {
+        padding-top: 55%;
+        padding-bottom: 15%; } }
+    body main .preparations .items .item1 {
+      text-align: right; }
+      @media (max-width: 667px) {
+        body main .preparations .items .item1 {
+          text-align: center; } }
+    body main .preparations .items .item2 p {
+      color: #FFFFFF;
+      font-size: 36px;
+      line-height: 1;
+      margin-top: 33px; }
+      @media (max-width: 667px) {
+        body main .preparations .items .item2 p {
+          text-align: center;
+          font-size: 19px; } }
+
+body main .accordion {
+  background-image: url("../../assets/images/Fondo-Bloques.jpg");
+  background-size: cover; }
+  body main .accordion .groups {
+    margin-right: 0;
+    padding-top: 18%;
+    padding-bottom: 18%;
+    padding-left: 10%;
+    padding-right: 10%; }
+    body main .accordion .groups h2 {
+      color: #FFFFFF;
+      margin-bottom: 23px; }
+    body main .accordion .groups .group-1 .card,
+    body main .accordion .groups .group-2 .card {
+      margin-bottom: 23px;
+      border-radius: 8px; }
+      body main .accordion .groups .group-1 .card .card-header,
+      body main .accordion .groups .group-2 .card .card-header {
+        padding-right: 20%; }
+        body main .accordion .groups .group-1 .card .card-header span,
+        body main .accordion .groups .group-2 .card .card-header span {
+          font-size: 16px;
+          color: #03132E;
+          font-weight: bold; }
+        body main .accordion .groups .group-1 .card .card-header button,
+        body main .accordion .groups .group-2 .card .card-header button {
+          position: absolute;
+          left: 86%;
+          font-size: 37px;
+          top: 4px;
+          color: #03132E; }
+          @media (max-width: 667px) {
+            body main .accordion .groups .group-1 .card .card-header button,
+            body main .accordion .groups .group-2 .card .card-header button {
+              margin-left: 45%;
+              font-size: 37px;
+              position: static; } }
+          @media (min-width: 668px) and (max-width: 1024px) {
+            body main .accordion .groups .group-1 .card .card-header button,
+            body main .accordion .groups .group-2 .card .card-header button {
+              left: 78%; } }
+    body main .accordion .groups .group-1 .card-header {
+      padding-top: 4.6%;
+      padding-bottom: 4.6%; }
+
+body main .testimonial-slider {
+  background-color: #03132E;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 10%; }
+  @media (max-width: 667px) {
+    body main .testimonial-slider {
+      padding-top: 30%;
+      padding-bottom: 30%; } }
+  body main .testimonial-slider h2.title {
+    margin-bottom: 100px; }
+  body main .testimonial-slider .carousel-item {
+    padding-left: 19%;
+    padding-right: 13%; }
+    @media (max-width: 667px) {
+      body main .testimonial-slider .carousel-item {
+        padding-left: 10%;
+        padding-right: 10%; } }
+    @media (min-width: 668px) and (max-width: 1024px) {
+      body main .testimonial-slider .carousel-item {
+        padding-left: 10%;
+        padding-right: 5%; } }
+    body main .testimonial-slider .carousel-item .group-1 .item,
+    body main .testimonial-slider .carousel-item .group-2 .item {
+      border: solid 1px #FFFFFF;
+      padding-top: 7%;
+      padding-bottom: 5%;
+      border-radius: 7px;
+      width: 80%; }
+      @media (max-width: 667px) {
+        body main .testimonial-slider .carousel-item .group-1 .item,
+        body main .testimonial-slider .carousel-item .group-2 .item {
+          width: auto;
+          margin-bottom: 20px; } }
+      @media (min-width: 668px) and (max-width: 1024px) {
+        body main .testimonial-slider .carousel-item .group-1 .item,
+        body main .testimonial-slider .carousel-item .group-2 .item {
+          width: 90%; } }
+      body main .testimonial-slider .carousel-item .group-1 .item img,
+      body main .testimonial-slider .carousel-item .group-2 .item img {
+        position: absolute;
+        left: -25px; }
+      body main .testimonial-slider .carousel-item .group-1 .item img:nth-child(2),
+      body main .testimonial-slider .carousel-item .group-2 .item img:nth-child(2) {
+        left: 69%;
+        top: -2px; }
+        @media (max-width: 667px) {
+          body main .testimonial-slider .carousel-item .group-1 .item img:nth-child(2),
+          body main .testimonial-slider .carousel-item .group-2 .item img:nth-child(2) {
+            left: 81%; } }
+        @media (min-width: 668px) and (max-width: 1024px) {
+          body main .testimonial-slider .carousel-item .group-1 .item img:nth-child(2),
+          body main .testimonial-slider .carousel-item .group-2 .item img:nth-child(2) {
+            left: 74%; } }
+      body main .testimonial-slider .carousel-item .group-1 .item article h2,
+      body main .testimonial-slider .carousel-item .group-2 .item article h2 {
+        font-size: 20px; }
+      body main .testimonial-slider .carousel-item .group-1 .item article p,
+      body main .testimonial-slider .carousel-item .group-2 .item article p {
+        font-size: 12px;
+        text-align: left;
+        padding-left: 30%;
+        padding-right: 20%; }
+    body main .testimonial-slider .carousel-item .group-1 {
+      margin-bottom: 26px; }
+      @media (max-width: 667px) {
+        body main .testimonial-slider .carousel-item .group-1 {
+          margin-bottom: 0px; } }
+  body main .testimonial-slider .carousel-indicators {
+    bottom: -55px; }
+    body main .testimonial-slider .carousel-indicators li {
+      background-color: #FFFFFF;
+      width: 7px;
+      height: 7px;
+      border-radius: 15px;
+      margin-right: 2%; }
+    body main .testimonial-slider .carousel-indicators li.active {
+      background-color: #F2B200; }
+
+body main .column3 {
+  background-image: url("../../assets/images/Portada-Servicios.jpg");
+  background-size: cover;
+  padding-top: 16%;
+  padding-bottom: 2%;
+  padding-left: 8%; }
+  @media (max-width: 667px) {
+    body main .column3 {
+      padding-top: 128%; } }
+  @media (min-width: 668px) and (max-width: 1024px) {
+    body main .column3 {
+      padding-top: 30%; } }
+  body main .column3 h2 {
+    color: #03132E;
+    font-size: 49px; }
+    @media (max-width: 667px) {
+      body main .column3 h2 {
+        font-size: 28px; } }
+
+body main .accordion2 {
+  background-image: url("../../assets/images/Fondo-Servicios-Abogados.jpg");
+  background-size: cover; }
+  body main .accordion2 .groups {
+    margin-right: 0;
+    padding-top: 18%;
+    padding-bottom: 18%;
+    padding-left: 10%;
+    padding-right: 10%; }
+    body main .accordion2 .groups h2 {
+      color: #FFFFFF;
+      margin-bottom: 23px; }
+    body main .accordion2 .groups .group-1 .card,
+    body main .accordion2 .groups .group-2 .card {
+      margin-bottom: 23px;
+      border-radius: 8px; }
+      body main .accordion2 .groups .group-1 .card .card-header,
+      body main .accordion2 .groups .group-2 .card .card-header {
+        padding-right: 20%; }
+        body main .accordion2 .groups .group-1 .card .card-header span,
+        body main .accordion2 .groups .group-2 .card .card-header span {
+          font-size: 16px;
+          color: #03132E;
+          font-weight: bold; }
+        body main .accordion2 .groups .group-1 .card .card-header button,
+        body main .accordion2 .groups .group-2 .card .card-header button {
+          position: absolute;
+          left: 86%;
+          font-size: 37px;
+          top: 4px;
+          color: #03132E; }
+          @media (max-width: 667px) {
+            body main .accordion2 .groups .group-1 .card .card-header button,
+            body main .accordion2 .groups .group-2 .card .card-header button {
+              margin-left: 45%;
+              font-size: 37px;
+              position: static; } }
+          @media (min-width: 668px) and (max-width: 1024px) {
+            body main .accordion2 .groups .group-1 .card .card-header button,
+            body main .accordion2 .groups .group-2 .card .card-header button {
+              left: 78%; } }
+    body main .accordion2 .groups .group-1 .card-header {
+      padding-top: 4.6%;
+      padding-bottom: 4.6%; }

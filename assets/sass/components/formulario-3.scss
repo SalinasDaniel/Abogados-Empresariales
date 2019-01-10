@@ -22,16 +22,15 @@ body {
                     p {
                         line-height: 1;
                         @include breakpoint(phone) {
-                            font-size: 37px;
+                            font-size: 32px;
                         }
                         @include breakpoint(tablet) {
                             font-size: 40px;
                         }
                         @include breakpoint(desktop) {
-                            font-size: 65px;
+                            font-size: 49px;
                         }
                         strong {
-                            font-family: 'Montserrat', sans-serif;
                             font-weight: 800;
                         }
                     }
@@ -48,7 +47,7 @@ body {
                         padding-right: 4%;
                     }
                     p {
-                        font-size: 31px;
+                        font-size: 25px;
                         line-height: 1;
                         margin-right: 6%;
                         @include breakpoint(phone) {
@@ -56,7 +55,6 @@ body {
                             font-size: 24px;
                         }
                         strong {
-                            font-family: 'Montserrat', sans-serif;
                             font-weight: 800;
                             font-size: 52px;
                             margin-left: 7%;
@@ -84,22 +82,23 @@ body {
                             width: 100%;
                             height: 60px;
                             margin-bottom: 24px;
-                            border-radius: 46px;
-                            background-color: transparent;
+                            border-radius: 6px;
+                            background-color: #FFFFFF;
                             padding-left: 4%;
                             border: solid 2px #ffffff;
                         }
                          ::placeholder {
-                            color: #FFFFFF;
+                            color: #03132E;
+                            font-weight: bold;
                         }
                         .btn {
                             width: 100%;
-                            background-color: #EFC462;
+                            background-color: #F2B200;
                             color: #046488;
-                            font-style: italic;
-                            font-size: 31px;
-                            border-radius: 50px;
+                            font-size: 25px;
+                            border-radius: 6px;
                             transition: 1s;
+                            font-weight: bold;
                             @include breakpoint(phone) {
                                 font-size: 20px;
                             }
@@ -109,8 +108,8 @@ body {
                             }
                         }
                         .btn:hover {
-                            background-color: transparent;
-                            color: #FFFFFF;
+                            background-color: #046488;
+                            color: #F2B200;
                             border-color: #046488;
                         }
                     }

@@ -1,0 +1,24 @@
+body {
+    main {
+        .column3 {
+            background-image: url('../../assets/images/Portada-Servicios.jpg');
+            background-size: cover;
+            padding-top: 16%;
+            padding-bottom: 2%;
+            padding-left: 8%;
+            @include breakpoint(phone) {
+                padding-top: 128%;
+            }
+            @include breakpoint(tablet) {
+                padding-top: 30%;
+            }
+            h2 {
+                color: #03132E;
+                font-size: 49px;
+                @include breakpoint(phone) {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}
