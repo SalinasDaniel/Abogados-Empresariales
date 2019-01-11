@@ -851,13 +851,15 @@ body header .menu .navbar {
         background-color: #FFFFFF; } }
     body header .menu .navbar #navbarNav ul .nav-item {
       margin-right: 3%; }
-      body header .menu .navbar #navbarNav ul .nav-item .nav-link {
-        color: #FFFFFF; }
+      body header .menu .navbar #navbarNav ul .nav-item a {
+        color: #FFFFFF;
+        padding-right: .5rem;
+        padding-left: .5rem; }
         @media (max-width: 667px) {
-          body header .menu .navbar #navbarNav ul .nav-item .nav-link {
+          body header .menu .navbar #navbarNav ul .nav-item a {
             color: #03132E; } }
         @media (min-width: 668px) and (max-width: 1024px) {
-          body header .menu .navbar #navbarNav ul .nav-item .nav-link {
+          body header .menu .navbar #navbarNav ul .nav-item a {
             color: #03132E; } }
     body header .menu .navbar #navbarNav ul .active,
     body header .menu .navbar #navbarNav ul .nav-item:hover {

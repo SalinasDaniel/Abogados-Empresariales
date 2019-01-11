@@ -35,8 +35,10 @@ body {
                         }
                         .nav-item {
                             margin-right: 3%;
-                            .nav-link {
+                            a {
                                 color: #FFFFFF;
+                                padding-right: .5rem;
+                                padding-left: .5rem;
                                 @include breakpoint(phone) {
                                     color: #03132E;
                                 }
