@@ -35,5 +35,29 @@ body {
                 padding-bottom: 12%;
             }
         }
+        .col-nos {
+            background: none;
+            .items {
+                .item1 {
+                    img {
+                        @include breakpoint(phone) {
+                            width: 37%;
+                            margin-top: 50px;
+                        }
+                    }
+                }
+                .item2 {
+                    p {
+                        font-size: 22px;
+                        line-height: 1;
+                        margin-top: 65px;
+                        @include breakpoint(phone) {
+                            padding-left: 10%;
+                            padding-right: 10%;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

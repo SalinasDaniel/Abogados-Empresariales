@@ -3,13 +3,6 @@ body {
         .headboard {
             background-image: url('../../assets/images/Portada.jpg');
             background-size: cover;
-            height: 730px;
-            @include breakpoint(phone) {
-                height: auto;
-            }
-            @include breakpoint(tablet) {
-                height: auto;
-            }
             .team {
                 @include breakpoint(phone) {
                     margin-top: 34px;

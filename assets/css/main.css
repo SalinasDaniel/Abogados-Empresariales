@@ -60,14 +60,7 @@ body header .head {
 
 body main .headboard {
   background-image: url("../../assets/images/Portada.jpg");
-  background-size: cover;
-  height: 730px; }
-  @media (max-width: 667px) {
-    body main .headboard {
-      height: auto; } }
-  @media (min-width: 668px) and (max-width: 1024px) {
-    body main .headboard {
-      height: auto; } }
+  background-size: cover; }
   @media (max-width: 667px) {
     body main .headboard .team {
       margin-top: 34px;
@@ -272,6 +265,21 @@ body main .column {
     body main .column {
       padding-top: 12%;
       padding-bottom: 12%; } }
+
+body main .col-nos {
+  background: none; }
+  @media (max-width: 667px) {
+    body main .col-nos .items .item1 img {
+      width: 37%;
+      margin-top: 50px; } }
+  body main .col-nos .items .item2 p {
+    font-size: 22px;
+    line-height: 1;
+    margin-top: 65px; }
+    @media (max-width: 667px) {
+      body main .col-nos .items .item2 p {
+        padding-left: 10%;
+        padding-right: 10%; } }
 
 body main .block-services-2 {
   background: linear-gradient(to right, #FFFFFF 0%, #DFDFDF 100%); }
@@ -887,6 +895,12 @@ body main .preparations {
 body main .accordion {
   background-image: url("../../assets/images/Fondo-Bloques.jpg");
   background-size: cover; }
+  body main .accordion h2.title-questions {
+    text-align: center;
+    position: absolute;
+    color: #FFFFFF;
+    width: 100%;
+    margin-top: 118px; }
   body main .accordion .groups {
     margin-right: 0;
     padding-top: 18%;
@@ -895,39 +909,85 @@ body main .accordion {
     padding-right: 10%; }
     body main .accordion .groups h2 {
       color: #FFFFFF;
-      margin-bottom: 23px; }
-    body main .accordion .groups .group-1 .card,
-    body main .accordion .groups .group-2 .card {
-      margin-bottom: 23px;
-      border-radius: 8px; }
-      body main .accordion .groups .group-1 .card .card-header,
-      body main .accordion .groups .group-2 .card .card-header {
-        padding-right: 20%; }
-        body main .accordion .groups .group-1 .card .card-header span,
-        body main .accordion .groups .group-2 .card .card-header span {
-          font-size: 16px;
-          color: #03132E;
-          font-weight: bold; }
-        body main .accordion .groups .group-1 .card .card-header button,
-        body main .accordion .groups .group-2 .card .card-header button {
-          position: absolute;
-          left: 86%;
-          font-size: 37px;
-          top: 4px;
-          color: #03132E; }
-          @media (max-width: 667px) {
-            body main .accordion .groups .group-1 .card .card-header button,
-            body main .accordion .groups .group-2 .card .card-header button {
-              margin-left: 45%;
-              font-size: 37px;
-              position: static; } }
-          @media (min-width: 668px) and (max-width: 1024px) {
-            body main .accordion .groups .group-1 .card .card-header button,
-            body main .accordion .groups .group-2 .card .card-header button {
-              left: 78%; } }
+      margin-bottom: 22px;
+      text-align: left; }
+      @media (max-width: 667px) {
+        body main .accordion .groups h2 {
+          font-size: 30px; } }
+    body main .accordion .groups h2.title {
+      margin-bottom: 60px; }
+    body main .accordion .groups .group-1,
+    body main .accordion .groups .group-2 {
+      text-align: center; }
+      body main .accordion .groups .group-1 .card,
+      body main .accordion .groups .group-2 .card {
+        margin-bottom: 23px;
+        border-radius: 8px;
+        text-align: left; }
+        body main .accordion .groups .group-1 .card .card-header,
+        body main .accordion .groups .group-2 .card .card-header {
+          padding-right: 20%; }
+          body main .accordion .groups .group-1 .card .card-header span,
+          body main .accordion .groups .group-2 .card .card-header span {
+            font-size: 16px;
+            color: #03132E;
+            font-weight: bold; }
+          body main .accordion .groups .group-1 .card .card-header button,
+          body main .accordion .groups .group-2 .card .card-header button {
+            position: absolute;
+            left: 86%;
+            font-size: 37px;
+            top: 4px;
+            color: #03132E; }
+            @media (max-width: 667px) {
+              body main .accordion .groups .group-1 .card .card-header button,
+              body main .accordion .groups .group-2 .card .card-header button {
+                margin-left: 45%;
+                font-size: 37px;
+                position: static; } }
+            @media (min-width: 668px) and (max-width: 1024px) {
+              body main .accordion .groups .group-1 .card .card-header button,
+              body main .accordion .groups .group-2 .card .card-header button {
+                left: 78%; } }
+      body main .accordion .groups .group-1 .btn-default,
+      body main .accordion .groups .group-2 .btn-default {
+        background-color: #F2B200;
+        border: solid 1px #F2B200;
+        color: #FFFFFF;
+        font-size: 23px;
+        border-radius: 6px;
+        font-weight: bold;
+        transition: 1s;
+        height: 65px;
+        width: 66%; }
+        @media (max-width: 667px) {
+          body main .accordion .groups .group-1 .btn-default,
+          body main .accordion .groups .group-2 .btn-default {
+            font-size: 17px;
+            width: 100%; } }
+      body main .accordion .groups .group-1 .btn-default:hover,
+      body main .accordion .groups .group-2 .btn-default:hover {
+        background-color: #FFFFFF;
+        color: #F2B200; }
     body main .accordion .groups .group-1 .card-header {
       padding-top: 4.6%;
       padding-bottom: 4.6%; }
+    @media (max-width: 667px) {
+      body main .accordion .groups .services {
+        margin-top: 120px; } }
+    body main .accordion .groups .services .card:nth-child(2n+1) .card-header {
+      padding-top: 4.6%;
+      padding-bottom: 4.6%; }
+  @media (max-width: 667px) {
+    body main .accordion .ques {
+      padding-top: 80%; } }
+  @media (min-width: 668px) and (max-width: 1024px) {
+    body main .accordion .ques {
+      padding-top: 30%; } }
+
+body main .accordion2 {
+  background-image: url("../../assets/images/Fondo-Servicios-Abogados.jpg");
+  background-size: cover; }
 
 body main .testimonial-slider {
   background-color: #03132E;
@@ -1013,11 +1073,11 @@ body main .column3 {
   background-image: url("../../assets/images/Portada-Servicios.jpg");
   background-size: cover;
   padding-top: 16%;
-  padding-bottom: 2%;
+  padding-bottom: 3%;
   padding-left: 8%; }
   @media (max-width: 667px) {
     body main .column3 {
-      padding-top: 128%; } }
+      padding-top: 164%; } }
   @media (min-width: 668px) and (max-width: 1024px) {
     body main .column3 {
       padding-top: 30%; } }
@@ -1026,49 +1086,138 @@ body main .column3 {
     font-size: 49px; }
     @media (max-width: 667px) {
       body main .column3 h2 {
-        font-size: 28px; } }
+        font-size: 28px;
+        margin-top: -130px; } }
+  @media (max-width: 667px) {
+    body main .column3 img {
+      width: 100%; } }
+  @media (min-width: 668px) and (max-width: 1024px) {
+    body main .column3 img {
+      width: 100%;
+      margin-top: 38px; } }
 
-body main .accordion2 {
-  background-image: url("../../assets/images/Fondo-Servicios-Abogados.jpg");
-  background-size: cover; }
-  body main .accordion2 .groups {
-    margin-right: 0;
-    padding-top: 18%;
-    padding-bottom: 18%;
-    padding-left: 10%;
-    padding-right: 10%; }
-    body main .accordion2 .groups h2 {
+body main .colum {
+  background-image: url("../../assets/images/Portada-Nosotros.png");
+  padding-bottom: 0;
+  padding-top: 12%; }
+  @media (max-width: 667px) {
+    body main .colum {
+      padding-top: 96%; } }
+  body main .colum .items {
+    margin-right: 0; }
+    body main .colum .items .item1 h2 {
       color: #FFFFFF;
-      margin-bottom: 23px; }
-    body main .accordion2 .groups .group-1 .card,
-    body main .accordion2 .groups .group-2 .card {
-      margin-bottom: 23px;
-      border-radius: 8px; }
-      body main .accordion2 .groups .group-1 .card .card-header,
-      body main .accordion2 .groups .group-2 .card .card-header {
-        padding-right: 20%; }
-        body main .accordion2 .groups .group-1 .card .card-header span,
-        body main .accordion2 .groups .group-2 .card .card-header span {
-          font-size: 16px;
-          color: #03132E;
-          font-weight: bold; }
-        body main .accordion2 .groups .group-1 .card .card-header button,
-        body main .accordion2 .groups .group-2 .card .card-header button {
-          position: absolute;
-          left: 86%;
-          font-size: 37px;
-          top: 4px;
-          color: #03132E; }
-          @media (max-width: 667px) {
-            body main .accordion2 .groups .group-1 .card .card-header button,
-            body main .accordion2 .groups .group-2 .card .card-header button {
-              margin-left: 45%;
-              font-size: 37px;
-              position: static; } }
-          @media (min-width: 668px) and (max-width: 1024px) {
-            body main .accordion2 .groups .group-1 .card .card-header button,
-            body main .accordion2 .groups .group-2 .card .card-header button {
-              left: 78%; } }
-    body main .accordion2 .groups .group-1 .card-header {
-      padding-top: 4.6%;
-      padding-bottom: 4.6%; }
+      margin-top: 55px; }
+
+body main .col-contac {
+  background-image: url("../../assets/images/Portada-Contacto.jpg"); }
+
+body main .col-preguntas {
+  background-image: url("../../assets/images/Portada-Preguntas.jpg"); }
+
+body main .team2 {
+  background-color: #03132E;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 10%;
+  padding-right: 10%; }
+  @media (max-width: 667px) {
+    body main .team2 {
+      padding-top: 20%;
+      padding-bottom: 20%; } }
+  @media (min-width: 668px) and (max-width: 1024px) {
+    body main .team2 {
+      padding-left: 0;
+      padding-right: 0; } }
+  body main .team2 .group-1,
+  body main .team2 .group-2 {
+    margin-right: 0; }
+    body main .team2 .group-1 .item,
+    body main .team2 .group-2 .item {
+      margin-bottom: 100px; }
+    body main .team2 .group-1 article p,
+    body main .team2 .group-2 article p {
+      margin-top: 25px; }
+    body main .team2 .group-1 article p:nth-child(2),
+    body main .team2 .group-2 article p:nth-child(2) {
+      margin-top: -20px; }
+    body main .team2 .group-1 .borde,
+    body main .team2 .group-2 .borde {
+      border-right: solid 2px #FFFFFF; }
+      @media (max-width: 667px) {
+        body main .team2 .group-1 .borde,
+        body main .team2 .group-2 .borde {
+          border: none; } }
+  body main .team2 .group-2 {
+    margin-top: 70px; }
+    body main .team2 .group-2 img.pluma {
+      margin-top: 140px; }
+      @media (max-width: 667px) {
+        body main .team2 .group-2 img.pluma {
+          margin-top: 0; } }
+
+body main .form-contac {
+  background-color: #046488;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  color: #FFFFFF; }
+  @media (max-width: 667px) {
+    body main .form-contac {
+      padding-top: 20%;
+      padding-bottom: 20%; } }
+  body main .form-contac h2 {
+    text-align: center;
+    font-size: 44px; }
+    @media (max-width: 667px) {
+      body main .form-contac h2 {
+        font-size: 28px; } }
+  body main .form-contac .form {
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 33%;
+    margin-top: 60px; }
+    @media (max-width: 667px) {
+      body main .form-contac .form {
+        padding-left: 6%; } }
+    @media (min-width: 668px) and (max-width: 1024px) {
+      body main .form-contac .form {
+        padding-left: 20%; } }
+    @media screen and (min-width: 1900px) {
+      body main .form-contac .form {
+        padding-left: 38%; } }
+    body main .form-contac .form form input {
+      display: block;
+      border-radius: 6px;
+      border: none;
+      height: 50px;
+      width: 100%;
+      margin-bottom: 17px;
+      padding-left: 2%; }
+      @media (max-width: 667px) {
+        body main .form-contac .form form input {
+          width: 94%; } }
+    body main .form-contac .form form textarea {
+      padding-left: 2%;
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 10px; }
+      @media (max-width: 667px) {
+        body main .form-contac .form form textarea {
+          width: 94%; } }
+    body main .form-contac .form form ::placeholder {
+      color: #03132E;
+      font-weight: bold; }
+    body main .form-contac .form form .btn {
+      background-color: #F2B200;
+      color: #FFFFFF;
+      font-weight: bold;
+      height: 45px;
+      width: 38%;
+      font-size: 23px;
+      transition: 1s;
+      border-color: #F2B200; }
+    body main .form-contac .form form .btn:hover {
+      background-color: #FFFFFF;
+      color: #F2B200; }

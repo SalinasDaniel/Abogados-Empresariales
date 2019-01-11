@@ -4,10 +4,10 @@ body {
             background-image: url('../../assets/images/Portada-Servicios.jpg');
             background-size: cover;
             padding-top: 16%;
-            padding-bottom: 2%;
+            padding-bottom: 3%;
             padding-left: 8%;
             @include breakpoint(phone) {
-                padding-top: 128%;
+                padding-top: 164%;
             }
             @include breakpoint(tablet) {
                 padding-top: 30%;
@@ -17,8 +17,41 @@ body {
                 font-size: 49px;
                 @include breakpoint(phone) {
                     font-size: 28px;
+                    margin-top: -130px;
                 }
             }
+            img {
+                @include breakpoint(phone) {
+                    width: 100%;
+                }
+                @include breakpoint(tablet) {
+                    width: 100%;
+                    margin-top: 38px;
+                }
+            }
+        }
+        .colum {
+            background-image: url('../../assets/images/Portada-Nosotros.png');
+            padding-bottom: 0;
+            padding-top: 12%;
+            @include breakpoint(phone) {
+                padding-top: 96%;
+            }
+            .items {
+                margin-right: 0;
+                .item1 {
+                    h2 {
+                        color: #FFFFFF;
+                        margin-top: 55px;
+                    }
+                }
+            }
+        }
+        .col-contac {
+            background-image: url('../../assets/images/Portada-Contacto.jpg');
+        }
+        .col-preguntas {
+            background-image: url('../../assets/images/Portada-Preguntas.jpg');
         }
     }
 }
