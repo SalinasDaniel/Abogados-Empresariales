@@ -39,6 +39,7 @@ body {
                                 color: #FFFFFF;
                                 padding-right: .5rem;
                                 padding-left: .5rem;
+                                padding: .5rem 1rem;
                                 @include breakpoint(phone) {
                                     color: #03132E;
                                 }

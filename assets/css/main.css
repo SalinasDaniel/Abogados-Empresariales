@@ -854,7 +854,8 @@ body header .menu .navbar {
       body header .menu .navbar #navbarNav ul .nav-item a {
         color: #FFFFFF;
         padding-right: .5rem;
-        padding-left: .5rem; }
+        padding-left: .5rem;
+        padding: .5rem 1rem; }
         @media (max-width: 667px) {
           body header .menu .navbar #navbarNav ul .nav-item a {
             color: #03132E; } }
