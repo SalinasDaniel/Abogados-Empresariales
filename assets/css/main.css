@@ -836,7 +836,7 @@ body header .menu .navbar {
     background-color: #FFFFFF; }
   body header .menu .navbar #navbarNav ul {
     margin-right: 13%;
-    width: 43%; }
+    width: 51%; }
     @media (max-width: 667px) {
       body header .menu .navbar #navbarNav ul {
         width: 100%;
