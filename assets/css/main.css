@@ -12,7 +12,7 @@ body header .head {
     body header .head {
       text-align: left;
       width: 85%;
-      margin-left: 7%; } }
+      margin-left: 10%; } }
   @media (min-width: 668px) and (max-width: 1024px) {
     body header .head {
       text-align: left;
@@ -72,7 +72,7 @@ body main .headboard {
   @media (min-width: 1025px) {
     body main .headboard .team {
       margin-top: -269px;
-      margin-left: 5%;
+      margin-left: 8%;
       width: 38%; } }
   body main .headboard .form-description {
     margin-left: 0;
@@ -95,7 +95,7 @@ body main .headboard {
           padding-left: 5%; } }
       @media (min-width: 1025px) {
         body main .headboard .form-description .description {
-          padding-left: 7%; } }
+          padding-left: 11%; } }
       body main .headboard .form-description .description p {
         line-height: 1;
         font-size: 26px; }
@@ -133,6 +133,9 @@ body main .headboard {
     @media (min-width: 668px) and (max-width: 1024px) {
       body main .headboard .form .item {
         width: 90%; } }
+    @media (min-width: 1025px) {
+      body main .headboard .form .item {
+        margin-left: 15%; } }
     body main .headboard .form .item form input {
       display: block;
       width: 100%;
@@ -355,7 +358,8 @@ body main .block-services-2 {
             margin-left: 9%; } }
         @media (min-width: 1025px) {
           body main .block-services-2 .image-description .description button {
-            width: 61%; } }
+            width: 61%;
+            margin-left: 5%; } }
       body main .block-services-2 .image-description .description button:hover {
         background-color: transparent;
         color: #F2B200;
@@ -821,8 +825,8 @@ body main .popups .modal-dialog {
 
 body header .menu hr {
   background-color: #EFC462;
-  width: 71%;
-  margin-left: 9%; }
+  width: 70%;
+  margin-left: 13%; }
 
 body header .menu .navbar {
   margin-top: -26px; }
@@ -835,7 +839,7 @@ body header .menu .navbar {
   body header .menu .navbar button {
     background-color: #FFFFFF; }
   body header .menu .navbar #navbarNav ul {
-    margin-right: 13%;
+    margin-right: 7%;
     width: 51%; }
     @media (max-width: 667px) {
       body header .menu .navbar #navbarNav ul {
@@ -865,9 +869,7 @@ body header .menu .navbar {
     body header .menu .navbar #navbarNav ul .active,
     body header .menu .navbar #navbarNav ul .nav-item:hover {
       border-top: solid 7px #EFC462;
-      margin-top: -2px;
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px; }
+      margin-top: -2px; }
 
 body main .preparations {
   background-image: url("../../assets/images/Fondo-Listos.jpg");

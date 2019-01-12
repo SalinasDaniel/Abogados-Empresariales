@@ -6,7 +6,7 @@ body {
             @include breakpoint(desktop) {
                 text-align: left;
                 width: 85%;
-                margin-left: 7%;
+                margin-left: 10%;
             }
             @include breakpoint(tablet) {
                 text-align: left;

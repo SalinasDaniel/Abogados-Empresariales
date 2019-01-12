@@ -3,8 +3,8 @@ body {
         .menu {
             hr {
                 background-color: #EFC462;
-                width: 71%;
-                margin-left: 9%;
+                width: 70%;
+                margin-left: 13%;
             }
             .navbar {
                 margin-top: -26px;
@@ -19,7 +19,7 @@ body {
                 }
                 #navbarNav {
                     ul {
-                        margin-right: 13%;
+                        margin-right: 7%;
                         width: 51%;
                         @include breakpoint(phone) {
                             width: 100%;
@@ -52,8 +52,6 @@ body {
                         .nav-item:hover {
                             border-top: solid 7px #EFC462;
                             margin-top: -2px;
-                            border-top-left-radius: 4px;
-                            border-top-right-radius: 4px;
                         }
                     }
                 }
